@@ -30,7 +30,7 @@ Parte de ser responsable de un perro es no dejar rastro de que estuviste allí. 
 Puedes comprarte un soporte para bolsa que se adhiera a la correa de tu perro o guardar las bolsas en el bolsillo antes de salir por la puerta. Por otra parte, <b>recuerda depositar las bolsas llenas en el contenedor de residuos (el gris) a lo largo del paseo</b>. Tranquilo, no es repugnante una vez en la bolsa y simplemente es amable y agradable para la comunidad.
 
 
-### Tú tienes el control
+#### Tú tienes el control
 Para que los paseos sean placenteros y seguros, debes mantener el control de tu perro en todo momento. Mantén a tu perro a tu lado cuando esté cerca de otros perros o personas con una correa corta. Puede hacer que los paseos sean menos estresantes al entrenar también a caminar con la correa suelta. 
 
 Esto le permitirá a tu perro tener muchas oportunidades de olfatear durante la caminata. Después de todo, <b>¡la nariz de tu perro es la principal forma en que explora su mundo!</b> (En <b>[este artículo](https://www.kolyy.com/es/disminuye-la-ansiedad-de-tu-perro-con-el-olfato/)</b> encontrarás más información sobre el olfato)
