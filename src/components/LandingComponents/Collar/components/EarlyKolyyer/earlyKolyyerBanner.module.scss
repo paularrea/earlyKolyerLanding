@@ -2,39 +2,59 @@
 @import "../../../../../styles/variables.scss";
 
 .bg_container{
-    background-color: $greenKolyy;
+    position: relative;
+    background-color: transparent;
     width: 100%;
-    border-radius: 0 0 30px 30px;
+    border-radius: 0 0 25px 25px;
+    z-index: 9999;
+    height: 180px;
 }
 .container{
+    position: absolute;
     background: linear-gradient(0deg, #1F1F1F, #1F1F1F);
     box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.67);
     border-radius: 25px;
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
     color: white;
     width: 100vw;
-    z-index: 999;
-    .selling_bar_container{
-        margin: .5rem 0;
-        h5{
-          font-size: 18px;
-          font-weight: 300;
-          margin-bottom: 1rem;
-          span{
-            font-size: 18px;
-            font-weight: 500;
-          } 
+    .flex_container{
+        width: 100%;
+        padding: 0 5vw !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .title{
+            width: 40%; 
+            h2{
+            font-size: 20px !important;
+            font-weight: 800 !important;
+            line-height: 22.1px !important;  
+            }
         }
+        .text{
+            width: 40%; 
+            p{
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 16.94px; 
+            }
+        }
+    }
+    
+    .selling_bar_container{
+        margin: .5rem 5vw;
         .total_bar{
-            width: 100%;
-            height: 10px;
+            width: 90vw;
+            height: 20px;
             background: rgba(48, 170, 170, 0.15);
-            border-radius: 1px;
+            border-radius: 9px;
             .completed{
                 width: 29%;
-                height: 10px;
+                height: 20px;
                 background: $greenKolyy;
-                border-radius: 1px;
+                border-radius: 9px;
             }
         }
         .bar_info{
@@ -47,22 +67,78 @@
         }
     }
     .phases_container{
-        margin: 2rem 0 .5rem 0;
-        img{
-            width: 100%;
+        margin: .5rem 5vw;
+        .img{
+            width: 90vw;
+            max-width: 430px;
             margin: 1rem 0 .5rem 0;
         }
         .phases_info{
-            margin: 0 auto;
+            margin-left: 1rem;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             text-align: center;
             justify-content: space-around;
-            width: 80%;
+            width: 70vw;
             p{
-                padding-right: 2rem
+                width: 100%;
             }
         }
     }
 }
 
+@media (min-width: 870px) {
+    .bg_container{
+        height: 150px;
+        .container{
+            height: 185px;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            .title{
+                left: 5vw;
+                position: absolute;
+                bottom: 20px;
+                h2{
+                font-size: 24px;
+                font-weight: 800;
+                line-height: 26.53px;  
+                width: 210px;
+                }
+            }
+            .phases_container{
+                margin: 0;
+                .desk_container{
+                    position: relative;
+                    .img{
+                        position: absolute;
+                        top: -43px;
+                        margin: 0;
+                        width: 65vw;
+                        max-width: 740px;
+                        height: auto;
+                    }
+                    .text{
+                        position: absolute;
+                        top: 10px;
+                        left: 5vw;
+                        p{
+                        font-size: 14px;
+                        font-weight: 300;
+                        line-height: 16.94px;  
+                        width: 210px;
+                        }
+                    }
+                }
+            }
+            .selling_bar_container{
+                margin: .5rem 0;
+                padding-right: 5vw;
+                .total_bar{
+                    width: 30vw;
+                }
+            }
+        }
+    }
+
+}

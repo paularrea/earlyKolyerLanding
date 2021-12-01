@@ -3,7 +3,7 @@ import { container } from "./features.module.scss";
 import FeatureSwapper from "./components/FeatureSwapper/FeatureSwapper";
 import ScrollFeatures from "./components/horizontalScrollFeature/ScrollFeatures";
 import BgImgFeatures from "./components/bgImgFeatures/bgImgFeatures";
-import Sponsors from "./components/Sponsors";
+import Sponsors from "./components/Sponsors/Sponsors";
 import ArrowsImg from "./components/ArrowsImg/ArrowsImg";
 
 const Features = () => {
@@ -17,10 +17,10 @@ const Features = () => {
         </p>
         <ArrowsImg />
       </div>
-      <Sponsors/>
+     <Sponsors/>
       <BgImgFeatures />
       <FeatureSwapper />
-      <ScrollFeatures />
+      <ScrollFeatures/>
     </>
   );
 };

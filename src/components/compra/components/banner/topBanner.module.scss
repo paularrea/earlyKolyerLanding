@@ -1,0 +1,19 @@
+.top_banner{
+    padding: calc(39px + 1rem) 1rem 1rem 1rem;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #30AAAA;
+    color: white;
+    p{
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 13px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 870px) {
+    .top_banner{
+        padding: calc(100px + 1rem) 1rem 1rem 1rem;
+    }
+}

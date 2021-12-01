@@ -1,5 +1,5 @@
 .container{
-    padding: 2.5rem 5%;
+    padding: 0 5%;
     text-align: center;
     h2{
         font-size: 40px;
@@ -12,6 +12,7 @@
         line-height: 17px;
     }
     .img_container{
+        width: 100%;
         position: relative;
         padding: 5rem 0;
         div{
@@ -60,26 +61,28 @@
 }
 
 
-@media (min-width: 770px) {
+@media (min-width: 1000px) {
     .container{
+        max-width: 1100px;
+        margin: 0 auto;
         .img_container{
             .abs1{
-                width: 100%;
+                width: auto;
                 top: 4%;
                 left: 26%;
             } 
             .abs2{
-                width: 100%;
-                top: 28%;
+                width: auto;
+                top: 26%;
                 right: 5%;
             } 
             .abs3{
-                width: 100%;
-                bottom: 30%;
+                width: auto;
+                bottom: 35%;
                 left: 18%;
             } 
             .abs4{
-                width: 100%;
+                width: auto;
                 bottom: 5%;
                 right: 24%;
             }

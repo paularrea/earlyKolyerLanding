@@ -1,0 +1,113 @@
+@import "../../../../styles/variables.scss";
+
+.cards_container{
+    padding-top: 130px;
+    margin: 1rem 5vw;
+    h2{
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    p{
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 1rem;
+
+    }
+    .card_container{
+        background: radial-gradient(58.95% 46.94% at 50% 50%, #6F6F6F 0%, #434343 100%);
+        border-radius: 20px;
+        margin: 1rem 0;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .green_price{
+            display: flex;
+            h5{
+            color: $greenKolyy;
+            font-size: 22px;
+            font-weight: 800;
+            line-height: 27px;
+            margin-right: .5rem;
+            }
+            p{
+                white-space: nowrap;
+                color: $greenKolyy;
+                font-weight: 500 !important;
+                font-size: 14px;
+                line-height: 17px;
+                padding: .3rem .5rem;
+                border: 1px solid $greenKolyy;
+                filter: drop-shadow(0px 0px 4px #30AAAA);
+                border-radius: 15px;
+            }
+        }
+        
+        .text, p{
+            margin: 0;
+            width: 80%;
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 15px;
+            text-align: left;
+        }
+        .text{
+            padding: 1rem 0;
+        }
+        h3{
+            display: flex;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 27px;
+            text-align: left;
+            .decimal{
+                position: relative;
+                text-decoration-line: none;
+                span{
+                    position: absolute;
+                    top: 0;
+                    left: 1.5rem;
+                    font-weight: 300 !important;
+                    font-size: 14px;
+                    line-height: 17px;
+                    text-decoration-line: line-through;
+                }
+            }
+        }
+        .button{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            text-align: center;
+            text-transform: uppercase;
+            box-shadow: 0px 0px 13px #30AAAA;
+            border-radius: 25.5px;
+            padding: 5px 20px;
+            margin: .5rem 0;
+        }
+        .img{
+           width: 55vw;
+           max-width: 300px;
+        }
+    }
+}
+
+@media (min-width: 870px) {
+    .cards_container{
+        h2,p{
+            text-align: left;
+        }
+        .flex{
+            padding-top: 5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            .card_container{
+                width: 27vw;
+            }
+        }  
+    }
+}

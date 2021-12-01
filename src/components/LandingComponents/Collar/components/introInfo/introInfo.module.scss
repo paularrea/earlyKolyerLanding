@@ -1,18 +1,21 @@
 @import "../../../../../styles/variables.scss";
 .flex_container{
-    background-color: $greenKolyy;
+    background-color: transparent;
     display: flex;
-    width: 100vw;
+    width: 100%;
+    max-width: 350px;
+    text-align: right;
     justify-content: space-between;
     align-items: center;
     padding: .5rem;
+    max-width: 500px;
     div{
+        width: auto;
         padding: 0 .5rem;
         display: flex;
         color: white;
         justify-content: center;
         align-items: center;
-        width:auto;
         b{
             font-weight: 500;
         }
@@ -20,7 +23,7 @@
             padding-right: .5rem;
         }
         p,b{
-            width: auto;
+            line-height: 14.52px;
             font-size: 12px;
         }
     }

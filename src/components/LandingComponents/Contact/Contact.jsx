@@ -1,12 +1,20 @@
 import React from "react";
-import {container} from "./contact.module.scss"
+import { container, flex_container } from "./contact.module.scss";
 import ContactForm from "./components/Form";
+import Buttons from "./components/Buttons/Buttons";
 
 const Contact = () => {
   return (
-    <div id='contacto' className={container}>
+    <div id="contacto" className={container}>
       <h2>Contacta</h2>
-      <ContactForm />
+      <div className={flex_container}>
+        <div>
+          <ContactForm />
+        </div>
+        <div>
+          <Buttons />
+        </div>
+      </div>
     </div>
   );
 };

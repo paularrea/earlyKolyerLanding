@@ -10,7 +10,7 @@ const SubHeader = () => {
         to="el-collar"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={-40}
         duration={1000}
       >
         El collar
@@ -20,7 +20,7 @@ const SubHeader = () => {
         to="especificaciones"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={-40}
         duration={1000}
       >
         Especificaciones
@@ -30,7 +30,7 @@ const SubHeader = () => {
         to="kolyy"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={-40}
         duration={1000}
       >
         Kolyy
@@ -40,7 +40,7 @@ const SubHeader = () => {
         to="contacto"
         spy={true}
         smooth={true}
-        offset={-70}
+        offset={-40}
         duration={1000}
       >
         Contacto

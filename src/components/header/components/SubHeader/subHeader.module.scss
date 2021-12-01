@@ -6,6 +6,7 @@
     justify-content: space-between;
     align-items: center;
     a{
+        cursor: pointer;
         font-weight: 300;
         width: 100%;
         text-align: center;
@@ -17,6 +18,14 @@
         &:hover{
             background-color: white;
             color: $greenKolyy;
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    .sub_header_nav{
+        a{
+            font-size: 12px;
         }
     }
 }

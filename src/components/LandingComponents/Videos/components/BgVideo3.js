@@ -1,12 +1,14 @@
+
+   
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import BackgroundImage from "gatsby-background-image";
 
-const BgImg = (props) => {
+const BgVideo3 = (props) => {
   const data = useStaticQuery(
     graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "bg_img_features.png" }) {
+        placeholderImage: file(relativePath: { eq: "bg_video_3.png" }) {
           childImageSharp {
             fluid(maxWidth: 1360, quality: 90, webpQuality: 90) {
               ...GatsbyImageSharpFluid
@@ -19,9 +21,16 @@ const BgImg = (props) => {
 
   const imageData = data.placeholderImage.childImageSharp.fluid;
 
+  const style = {
+    width: "auto",
+    backgroundPosition: "bottom",
+    backgroundSize: "cover",
+  };
+
   return (
     <BackgroundImage
       Tag="section"
+      style={style}
       fluid={imageData}
     >
       <div>{props.children}</div>
@@ -29,4 +38,4 @@ const BgImg = (props) => {
   );
 };
 
-export default BgImg;
+export default BgVideo3;

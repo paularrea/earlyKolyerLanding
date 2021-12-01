@@ -5,7 +5,7 @@ const AboutImg = () => {
     return (
         <StaticImage
           placeholder="blurred"
-          src="../../../../images/about_img.jpg"
+          src="../../../../images/about_img.png"
           alt="comunidad kolyy"
         />
     )

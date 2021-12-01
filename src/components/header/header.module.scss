@@ -1,5 +1,5 @@
 header{
-    width: 100vw;
+    width: 100%;
     z-index: 99999;
     position: fixed;
     backdrop-filter: blur(5px);
@@ -52,7 +52,7 @@ header{
         }
 }
 .burger{
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 .flex_nav_btn{
     display: flex;
@@ -162,106 +162,6 @@ header{
 }
 @media (min-width: 900px) {
     .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 2rem; 
+        padding: .2rem 5vw; 
     }
-}
-@media (min-width: 950px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 2rem; 
-    }
-}
-@media (min-width: 1100px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 5rem; 
-    }
-}
-@media (min-width: 1600px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 10rem; 
-    }
-}
-@media (min-width: 1800px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 15rem; 
-    }
-}
-@media (min-width: 2000px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 15rem; 
-    }
-}
-@media (min-width: 2200px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 25rem; 
-    }
-}
-@media (min-width: 2400px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 30rem; 
-    }
-}
-@media (min-width: 2600px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 35rem; 
-    }
-}
-@media (min-width: 2800px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 40rem; 
-    }
-}
-@media (min-width: 3000px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 50rem; 
-    }
-}
-@media (min-width: 3200px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 60rem; 
-    }
-}
-@media (min-width: 3400px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 65rem; 
-    }
-}
-@media (min-width: 3600px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 70rem; 
-    }
-}
-@media (min-width: 3800px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 75rem; 
-    }
-}
-@media (min-width: 4000px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 80rem; 
-    }
-}
-@media (min-width: 4200px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 85rem; 
-    }
-}
-@media (min-width: 4400px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 90rem; 
-    }
-}
-@media (min-width: 4600px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 95rem; 
-    }
-}
-@media (min-width: 4800px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 100rem; 
-    }
-}
-@media (min-width: 5000px) {
-    .navBar, .menu_fijo, .menu_fijo_out{
-        padding: .2rem 110rem; 
-}
 }

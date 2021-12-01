@@ -48,7 +48,7 @@
     margin: 0 auto;
     max-width: 400px;
     display: flex !important;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom: 8vh;
   }

@@ -1,19 +1,19 @@
 import React from "react";
-import { container, flex_scroll } from "./scrollFeatures.module.scss";
-import tag1 from "../../../../../../../images/scroll_tag1.png";
-import tag2 from "../../../../../../../images/scroll_tag2.png";
-import tag3 from "../../../../../../../images/scroll_tag3.png";
-import tag4 from "../../../../../../../images/scroll_tag4.png";
+import { container, flex_scroll, img } from "./scrollFeatures.module.scss";
+import ScrollTag1 from "./img/ScrollTag1";
+import ScrollTag2 from "./img/ScrollTag2";
+import ScrollTag3 from "./img/ScrollTag3";
+import ScrollTag4 from "./img/ScrollTag4";
 
 const ScrollFeatures = () => {
   return (
     <div className={container}>
       <h2>Una app para disfrutar</h2>
       <div className={flex_scroll}>
-        <img src={tag1} alt="" />
-        <img src={tag2} alt="" />
-        <img src={tag3} alt="" />
-        <img src={tag4} alt="" />
+        <div className={img}><ScrollTag1 /></div>
+        <div className={img}><ScrollTag2 /></div>
+        <div className={img}><ScrollTag3 /></div>
+        <div className={img}><ScrollTag4 /></div>
       </div>
     </div>
   );

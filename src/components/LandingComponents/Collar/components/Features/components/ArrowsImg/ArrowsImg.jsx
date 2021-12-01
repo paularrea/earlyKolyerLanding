@@ -14,7 +14,7 @@ const ArrowsImg = () => {
         </div>
         <StaticImage
           placeholder="blurred"
-          src="../../../../../../images/features_landing.png"
+          src="../../../../../../../images/features_landing.png"
           alt="características del collar inteligente Kolyy"
         />
         <div className={abs3}>

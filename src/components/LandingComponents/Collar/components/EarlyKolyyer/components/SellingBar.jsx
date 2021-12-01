@@ -8,8 +8,8 @@ const ProgressiveBar = () => {
         <div className={completed}></div>
       </div>
       <div className={bar_info}>
-        <p>Quedan el 79% de collares</p>
-        <p>32 días de pre-venta</p>
+        <p>Collares pre-vendidos: 40%</p>
+        <p>Faltan 32 días</p>
       </div>
     </section>
   );
@@ -17,9 +17,6 @@ const ProgressiveBar = () => {
 const SellingBar = () => {
   return (
     <div className={selling_bar_container}>
-      <h5>
-        Early Kolyer: <span>Ahorra el 30%</span>
-      </h5>
       <ProgressiveBar />
     </div>
   );

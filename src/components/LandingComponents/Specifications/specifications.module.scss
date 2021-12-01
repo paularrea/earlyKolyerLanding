@@ -1,8 +1,50 @@
 .container{
-    padding: 2.5rem 0;
+    padding: 2.5rem 5vw;
+    transition: background-color 0.5s ease-in;
     text-align: center;
+    color: white;
+    .flex_container{
+        display: block;
+        justify-content: space-between;
+        align-items: flex-start;
+        .carousel_collars{
+            width: 50vw;
+            max-width: 600px;
+            .img{
+                margin: 0 auto;
+                max-width: 350px;
+            }
+        }
+    }
+    .img_container{
+        margin: 0 auto;
+        max-width: 400px;
+    }
     h2{
         font-size: 40px;
         font-weight: 300;
+        padding-bottom: 2rem;
+    }
+    h4{
+        font-size: 18px;
+        font-weight: 300;
+        padding-bottom: 1rem;
+    }
+    p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+
+@media (min-width: 870px) {
+    .container{
+        section{
+            padding-bottom: 3rem;
+        }
+        padding: 4rem 5vw;
+        .flex_container{
+            display: flex;
+        }
     }
 }

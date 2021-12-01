@@ -3,7 +3,11 @@ b{
     font-weight: 500;
 }
 .container{
+    background: radial-gradient(58.95% 46.94% at 50% 50%, #6F6F6F 0%, #434343 100%);
+    color: white;
+    width: 100%;
     padding: 2.5rem 5%;
+    padding-top: 150px;
     text-align: center;
     h2{
         font-size: 40px;
@@ -14,56 +18,5 @@ b{
         font-size: 14px;
         font-weight: 300;
         line-height: 17px;
-    }
-}
-.app_container_features{
-    height: 1019px;
-    padding: 2rem 1rem;
-    position: relative;
-    h2{
-        margin: 0 auto;
-        text-align: center;
-        font-size: 40px;
-        font-weight: 300;
-        padding-bottom: 1.5rem;
-    }
-    p{
-        position: absolute;
-        width: 50%;
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 23.13px;
-    }
-    .abs_1{
-        text-align: right;
-        top: 180px;
-        right: 1rem;
-    }
-    .abs_2{
-        top: 360px;
-        left: 1rem;
-    }
-    .abs_3{
-        text-align: right;
-        bottom: 140px;
-        right: 1rem;
-    }
-}
-.sponsors_container{
-    box-shadow: inset 0px -20px 15px #E4F3F0;
-    padding: 0 0 4rem 0;
-    margin: 0 auto;
-    h4{
-        text-align: center;
-        font-size: 18px;
-        font-weight: 300;
-    }
-    div{
-        margin: 0 auto;
-        width: 70%;
-        padding-top: 2rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-start;
     }
 }

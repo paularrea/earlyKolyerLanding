@@ -16,7 +16,7 @@ import {
 } from "../header.module.scss";
 import Logo from "./logo";
 
-const DesktopHeader = () => {
+const DesktopHeader = ({buyButton}) => {
   const [activeCollar, setActiveCollar] = useState(false);
   const [activePlacas, setActivePlacas] = useState(false);
   const [activeAbout, setActiveAbout] = useState(false);
@@ -61,12 +61,14 @@ const DesktopHeader = () => {
           to="/razas-de-perro"
           className={activeDoggipedia && active_white}
         >
-          {/* <FormattedMessage id="nav.blog" /> */}
           Conoce a tu perro
         </Link>
 
-        <Link id="blog" to="/blog-para-perros" className={activeBlog && active_white}>
-          {/* <FormattedMessage id="nav.blog" /> */}
+        <Link
+          id="blog"
+          to="/blog-para-perros"
+          className={activeBlog && active_white}
+        >
           Blog
         </Link>
         <Link
@@ -74,7 +76,6 @@ const DesktopHeader = () => {
           to="/contacto"
           className={activeQuestions && active_white}
         >
-          {/* <FormattedMessage id="nav.questions" /> */}
           Pregúntanos
         </Link>
       </nav>
@@ -89,7 +90,6 @@ const DesktopHeader = () => {
             to="/collar-perro-gps"
             className={activeCollar && active}
           >
-            {/* <FormattedMessage id="nav.collar" /> */}
             Collar
           </Link>
 
@@ -98,7 +98,6 @@ const DesktopHeader = () => {
             to="/0perrosperdidos"
             className={activePlacas && active}
           >
-            {/* <FormattedMessage id="nav.placa" /> */}
             #0perrosperdidos
           </Link>
 
@@ -107,7 +106,7 @@ const DesktopHeader = () => {
             to="/mundo-kolyy"
             className={activeAbout && active}
           >
-            {/* <FormattedMessage id="nav.about" /> */}
+            {" "}
             Mundo Kolyy
           </Link>
         </nav>
@@ -119,17 +118,25 @@ const DesktopHeader = () => {
             target="_blank"
           >
             {" "}
-            {/* <FormattedMessage id="nav.login" /> */}
-            <button style={{ backgroundColor: "#D9DADD", color: "black", fontSize:'16px' }}>
+            <button
+              style={{
+                backgroundColor: "#D9DADD",
+                color: "black",
+                fontSize: "16px",
+              }}
+            >
               Inicia sesión
             </button>
           </a>
-          <Link id="reserva" to="/reserva-collar-kolyy">
-            <button className={button_header}>
-              {/* <FormattedMessage id="nav.book" /> */}
-              Reserva
-            </button>
-          </Link>
+          {buyButton ? (
+            <Link id="compra" to="/comprar-collar-kolyy">
+              <button className={button_header}>Comprar Ya</button>
+            </Link>
+          ) : (
+            <Link id="reserva" to="/reserva-collar-kolyy">
+              <button className={button_header}>Reserva</button>
+            </Link>
+          )}
         </div>
       </div>
     </header>

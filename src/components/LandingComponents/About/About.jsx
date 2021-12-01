@@ -1,37 +1,62 @@
 import React from "react";
-import {
-  container,
-  green_container,
-  flex_container,
-  flex_div,
-} from "./about.module.scss";
-import { fb_insta_icons } from "../../../images/icons/fb_insta_icons.png";
+import { container, story, about_text, img, lateral_desktop_container } from "./about.module.scss";
 import AboutImg from "./components/AboutImg";
+import MediaQuery from "react-responsive";
+import AboutImgMobile from "./components/AboutImgMobile";
+import GreenCounterContainer from "./components/GreenCounterContainer";
+import FaQs from "./components/FaQs";
+import AboutWhiteContainer from "./components/AboutWhiteContainer";
 
 const About = () => {
   return (
-    <div id='kolyy' className={container}>
-      <h2>Sobre Kolyy</h2>
-      <p>Kolyy te avisa si tu perro se escapa y te ayuda a encontrarlo.</p>
-      <AboutImg />
-      <div className={green_container}>
-        <h2>Comunidad</h2>
-        <div className={flex_container}>
-          <div style={{ borderRight: "2px solid whitesmoke" }}>
-            <h3>+22.000</h3>
-            <div className={flex_div}>
-              <p>kolyers</p>
-              <img src={fb_insta_icons} alt="" />
-              <img src={fb_insta_icons} alt="" />
-            </div>
+    <>
+      <div id="kolyy" className={container}>
+        <MediaQuery maxWidth={870}>
+          <p className={story}>OUR STORY:</p>
+          <h2>Por Sky:</h2>
+          <p style={{ marginBottom: "2rem" }}>
+            Un admirable y fiel compañero de vida.
+          </p>
+        </MediaQuery>
+        <div className={img}>
+          <MediaQuery maxWidth={874}>
+            <AboutImgMobile />
+          </MediaQuery>
+          <MediaQuery minWidth={875}>
+            <AboutImg />
+          </MediaQuery>
+        </div>
+        <div className={lateral_desktop_container}>
+          <div className={about_text}>
+            <MediaQuery minWidth={870}>
+              <p className={story}>OUR STORY:</p>
+              <h2>Por Sky:</h2>
+              <p style={{ marginBottom: "2rem" }}>
+                Un admirable y fiel compañero de vida.
+              </p>
+            </MediaQuery>
+            <p>
+              Sky nos dejó por un cáncer intestinal con solo 7 años.
+              Aparentemente sano, un día dejó de comer y ya no pudimos hacer
+              nada para salvarlo.{" "}
+            </p>
+            <h3>
+              Los perros esconden su dolor hasta que ya es demasiado tarde.
+            </h3>
+            <p>
+              Entendimos que los perros por su condición suelen esconder el
+              dolor hasta que ya es demasiado tarde. Somos sus héroes, sus
+              padres, su familia y nuestra compañía es su mayor felicidad. No
+              los veremos tristes hasta que el sufrimiento sea difícil de
+              soportar.
+            </p>
           </div>
-          <div>
-            <h3>+10.000</h3>
-            <p>kolyers con placa identificativa</p>
-          </div>
+          <AboutWhiteContainer />
         </div>
       </div>
-    </div>
+        <GreenCounterContainer />
+      <FaQs />
+    </>
   );
 };
 
