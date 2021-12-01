@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { container, img } from "../custom.module.scss";
+import { collar_options_container, img } from "../custom.module.scss";
 import MediaQuery from "react-responsive";
 import ColorButtons from "./ColorButtons";
 import SizeButtons from "./SizeButtons";
@@ -44,7 +44,7 @@ const CollarOptions = ({
   return (
     <MediaQuery maxWidth={870}>
       {chooseColor && !displayProducts && (
-        <div style={{ background: selected.bgColor }} className={container}>
+        <div style={{ background: selected.bgColor }} className={collar_options_container}>
           <div className={img}>{selected.img}</div>
           <h3>Personaliza tu Kolyy</h3>
           <ColorButtons selected={selected} showCollar={showCollar} />

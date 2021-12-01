@@ -5,6 +5,22 @@ header{
     backdrop-filter: blur(5px);
     // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+button{
+  transition: all .4s ease-out;
+  color: whitesmoke;
+  background-color: #30AAAA;
+  font-size: 13px;
+  padding: 10px 40px;
+  outline: none;
+  border-radius: 100px;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  &:hover{
+    color: white;
+    background-color: #33afafd8;
+  }
+}
 .header_out{
     transform: translateY(-36px);
     transition: transform .5s ease-out; 

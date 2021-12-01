@@ -12,8 +12,8 @@ const Checkout = ({ productsToCheckout, finished }) => {
     const { error } = await stripe.redirectToCheckout({
       mode: "payment",
       lineItems: productsToCheckout,
-      successUrl: `http://localhost:8000/page-2/`,
-      cancelUrl: `http://localhost:8000/comprar-collar-kolyy/`,
+      successUrl: `https://testlanding.kolyy.com/`,
+      cancelUrl: `https://testlanding.kolyy.com/comprar-collar-kolyy/`,
     });
     if (error) {
       console.warn("Error:", error);
