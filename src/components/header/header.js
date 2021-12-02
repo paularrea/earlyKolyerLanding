@@ -4,9 +4,9 @@ import React, { useEffect, useState } from "react";
 import MediaQuery from "react-responsive";
 import { navBar, burger, flex_nav_btn } from "./header.module.scss";
 import Logo from "./components/logo";
-import Burger from "./components/burger";
 import SubHeader from "./components/SubHeader/SubHeader";
-import DesktopHeader from "./components/DesktopHeader"
+import DesktopHeader from "./components/DesktopHeader";
+import BurgerMenu from "./components/BurgerMenu";
 
 const Header = () => {
   const [buyButton, setBuyButton] = useState(false);
@@ -48,16 +48,16 @@ const Header = () => {
                 </Link>
               )}
               <div className={burger}>
-                <Burger />
+                <BurgerMenu />
               </div>
             </div>
           </div>
-          {buyButton && <SubHeader/>}
+          {buyButton && <SubHeader />}
         </header>
       </MediaQuery>
-      {/* <MediaQuery minWidth={901}>
+      <MediaQuery minWidth={901}>
         <DesktopHeader buyButton={buyButton} />
-      </MediaQuery> */}
+      </MediaQuery>
     </>
   );
 };
