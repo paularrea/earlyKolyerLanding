@@ -78,16 +78,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-intl`,
-      options: {
-        path: `${__dirname}/src/intl`,
-        languages: [`es`, `en`],
-        defaultLanguage: "es",
-        redirect: true,
-        redirectComponent: require.resolve(`./src/components/redirect.js`),
-      },
-    },
-    {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {

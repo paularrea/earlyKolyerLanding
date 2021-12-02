@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { fallDown as Menu } from "react-burger-menu";
 import "./burger.css";
 import Logo from "./logo";
-import Link from "../../Link";
+import Link from "gatsby";
 // import Language from "../../language";
 import menuArrow from "../../../images/icons/menuArrow.png";
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import Link from "../../Link";
+import Link from "gatsby";
 // import { FormattedMessage, injectIntl } from "gatsby-plugin-intl";
 import {
   header,

@@ -2,11 +2,11 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React, { useEffect, useState } from "react";
 import MediaQuery from "react-responsive";
-import DesktopHeader from "./components/DesktopHeader";
 import { navBar, burger, flex_nav_btn } from "./header.module.scss";
 import Logo from "./components/logo";
 import Burger from "./components/burger";
 import SubHeader from "./components/SubHeader/SubHeader";
+import DesktopHeader from "./components/DesktopHeader"
 
 const Header = () => {
   const [buyButton, setBuyButton] = useState(false);
@@ -55,9 +55,9 @@ const Header = () => {
           {buyButton && <SubHeader/>}
         </header>
       </MediaQuery>
-      <MediaQuery minWidth={900}>
+      {/* <MediaQuery minWidth={901}>
         <DesktopHeader buyButton={buyButton} />
-      </MediaQuery>
+      </MediaQuery> */}
     </>
   );
 };
