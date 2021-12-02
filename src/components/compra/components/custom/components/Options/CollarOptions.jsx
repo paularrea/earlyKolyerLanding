@@ -13,6 +13,7 @@ const CollarOptions = ({
   displayProducts,
   pushCollarToArray,
   finishAndPay,
+  productsToCheckout
 }) => {
   const [chooseSize, setChooseSize] = useState("");
   const [productId, setProductId] = useState("");
@@ -42,36 +43,26 @@ const CollarOptions = ({
   }, [chooseSize]);
 
   return (
-    // <MediaQuery maxWidth={870}>
     <>
       {chooseColor && !displayProducts && (
-        <div style={{ background: selected.bgColor }} className={container}>
+        <div className={container}>
           <div className={img}>{selected.img}</div>
-          <h3
-            style={{
-              padding: "1rem 0 2rem 0",
-              textAlign: "center",
-              fontWeight: 800,
-              fontSize: "20px",
-              lineHeight: "24px",
-            }}
-          >
-            Personaliza tu Kolyy
-          </h3>
-          <ColorButtons selected={selected} showCollar={showCollar} />
-          <SizeButtons
-            selected={selected}
-            addSizeToSelected={addSizeToSelected}
-          />
-          <AddMore
-            selected={selected}
-            finishAndPay={finishAndPay}
-            pushCollarToArray={pushCollarToArray}
-          />
+          <div>
+            <ColorButtons selected={selected} showCollar={showCollar} />
+            <SizeButtons
+              selected={selected}
+              addSizeToSelected={addSizeToSelected}
+            />
+            <AddMore
+            productsToCheckout={productsToCheckout}
+              selected={selected}
+              finishAndPay={finishAndPay}
+              pushCollarToArray={pushCollarToArray}
+            />
+          </div>
         </div>
       )}
-      </>
-    // </MediaQuery>
+    </>
   );
 };
 

@@ -13,6 +13,7 @@ import {
 } from "./introCard.module.scss";
 import { Link } from "react-scroll";
 import SubscriptionModal from "./components/SubscriptionModal";
+import MediaQuery from "react-responsive";
 
 const IntroCard = () => {
   return (
@@ -25,7 +26,7 @@ const IntroCard = () => {
           <h4>
             Collar kolyy + plan de suscripción <span>?</span>
           </h4>
-          <SubscriptionModal/>
+          <SubscriptionModal />
           <section className={flex}>
             <div>
               <h3>
@@ -50,15 +51,29 @@ const IntroCard = () => {
         </div>
         <IntroInfo />
         <div className={btn_container}>
-          <Link
-            activeClass="active"
-            to="buy-collar"
-            spy={true}
-            smooth={true}
-            duration={1000}
-          >
-            <Button />
-          </Link>
+          <MediaQuery maxWidth={870}>
+            <Link
+              activeClass="active"
+              to="buy-collar"
+              spy={true}
+              smooth={true}
+              duration={1000}
+            >
+              <Button />
+            </Link>
+          </MediaQuery>
+          <MediaQuery minWidth={870}>
+            <Link
+              activeClass="active"
+              to="buy-collar"
+              spy={true}
+              smooth={true}
+              offset={-200}
+              duration={1000}
+            >
+              <Button />
+            </Link>
+          </MediaQuery>
         </div>
       </div>
     </div>
