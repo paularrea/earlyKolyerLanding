@@ -40,7 +40,7 @@ const SelectedOptions = ({
 
   return (
     <div id="go_to_checkout" className={selection_container}>
-      <BuyButton finished={finished} displayProducts={displayProducts} productsToCheckout={productsToCheckout} />
+      <BuyButton setFinished={setFinished} finished={finished} displayProducts={displayProducts} productsToCheckout={productsToCheckout} />
       <div className={user_selection}>
         <h5>Tu selección:</h5>
         {displayProducts.map((product) => {

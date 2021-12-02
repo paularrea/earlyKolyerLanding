@@ -1,7 +1,8 @@
 .flex_custom_container{
-    padding: 2rem 5vw;
+    padding: 2rem 0 0 0;
 }
 .container{
+    padding: 0 5vw;
     .img{
         margin: 0 auto;
         width: 300px;
@@ -17,7 +18,7 @@
 }
 .buttons_container{
     width: auto;
-    padding: 0 2rem;
+    padding: 0 5vw;
     padding-bottom: 2rem;
     margin: 0 auto;
     .flex_title{

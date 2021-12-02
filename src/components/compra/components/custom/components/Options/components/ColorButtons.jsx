@@ -15,9 +15,10 @@ const numStyle = {
   border: "1px solid white",
   padding: ".2rem",
   borderRadius: "100px",
+  width: "25px",
+  height: "25px",
+  minHeight: "25px",
   minWidth: "25px",
-  width: "25px !important",
-  height: "25px !important",
   fontSize: "14px",
 };
 
@@ -26,7 +27,7 @@ const ColorButtons = ({ showCollar, selected }) => {
     <div
       style={{
         width: "auto",
-        padding: "0 2rem 2rem 2rem",
+        padding: "0 5vw 2rem 5vw",
         margin: "0 auto",
       }}
     >

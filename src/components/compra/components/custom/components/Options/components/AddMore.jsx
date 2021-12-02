@@ -8,11 +8,7 @@ import {
   add_button_style,
 } from "../../custom.module.scss";
 
-const AddMore = ({
-  pushCollarToArray,
-  finishAndPay,
-  selected,
-}) => {
+const AddMore = ({ pushCollarToArray, finishAndPay, selected }) => {
   return (
     <div className={buttons_container}>
       <div className={flex_title}>
@@ -26,9 +22,14 @@ const AddMore = ({
             to="buy-collar"
             spy={true}
             smooth={true}
+            offset={-150}
             duration={1000}
           >
             <button
+              style={{
+                color: !selected.size && "gray",
+                border: !selected.size && "1px solid gray",
+              }}
               className={add_button_style}
               disabled={!selected.size}
               onClick={pushCollarToArray}

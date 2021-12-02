@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { getStripe } from "./Stripe";
 import { button } from "./stripe.module.scss";
 
-const Checkout = ({ productsToCheckout, finished }) => {
+const Checkout = ({ productsToCheckout, finished, setFinished }) => {
   const [loading, setLoading] = useState(false);
 
   const redirectToCheckout = async (event) => {
@@ -24,6 +24,11 @@ const Checkout = ({ productsToCheckout, finished }) => {
     }
   };
 
+  useEffect(() => {
+    !productsToCheckout.length ? setFinished(false) : setFinished(true);
+  }, [productsToCheckout])
+
+
   return (
     <button
       className={button}
@@ -31,7 +36,7 @@ const Checkout = ({ productsToCheckout, finished }) => {
         backgroundColor: !finished && "gray",
         boxShadow: !finished && "0px 0px 13px gray",
       }}
-      disabled={loading && !finished ? true : false}
+      disabled={loading && finished ? true : false}
       onClick={redirectToCheckout}
     >
       Comprar

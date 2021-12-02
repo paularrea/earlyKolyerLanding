@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Checkout from "../../../../../../../Stripe/checkout";
 import { buy_button_container } from "../../custom.module.scss";
 
-const BuyButton = ({ productsToCheckout, displayProducts, finished }) => {
+const BuyButton = ({ productsToCheckout, displayProducts, finished, setFinished }) => {
   const [total, setTotal] = useState(0);
   const [totalBeforeDiscount, setTotalBeforeDiscount] = useState(0);
 
@@ -23,7 +23,7 @@ const BuyButton = ({ productsToCheckout, displayProducts, finished }) => {
         <h5>€{total} <span>{total && totalBeforeDiscount}</span></h5>
         <p>IVA incl.</p>
       </div>
-      <Checkout finished={finished} productsToCheckout={productsToCheckout} />
+      <Checkout setFinished={setFinished} finished={finished} productsToCheckout={productsToCheckout} />
     </div>
   );
 };

@@ -37,7 +37,7 @@ const CustomCollar = ({ setSelected, selected }) => {
     >
       <h3
         style={{
-          padding: "1rem 0 2rem 0",
+          padding: "1rem 0",
           textAlign: "center",
           fontWeight: 800,
           fontSize: "20px",
