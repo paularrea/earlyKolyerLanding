@@ -15,8 +15,9 @@ import {
   button_header,
 } from "../header.module.scss";
 import Logo from "./logo";
+import SubHeader from "./SubHeader/SubHeader";
 
-const DesktopHeader = ({buyButton}) => {
+const DesktopHeader = ({ buyButton }) => {
   const [activeCollar, setActiveCollar] = useState(false);
   const [activePlacas, setActivePlacas] = useState(false);
   const [activeAbout, setActiveAbout] = useState(false);
@@ -139,6 +140,7 @@ const DesktopHeader = ({buyButton}) => {
           )}
         </div>
       </div>
+      {buyButton && <SubHeader />}
     </header>
   );
 };
