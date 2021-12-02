@@ -1,4 +1,4 @@
-.collar_options_container{
+.container{
     padding: 2rem 0 0 0;
     .img{
         margin: 0 auto;
@@ -12,85 +12,86 @@
         font-size: 20px;
         line-height: 24px;
     }
-    .buttons_container{
-        width: auto;
-        padding: 0 2rem;
-        padding-bottom: 2rem;
-        margin: 0 auto;
-        .flex_title{
-            display: flex;
-            padding-bottom: 1rem;
-            h5{
-                    font-weight: 600;
-                    font-size: 18px;
-                    line-height: 22px;
-                }
-                p{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin: 0;
-                    margin-right: .5rem;
-                    border: 1px solid white;
-                    padding: .2rem;
-                    border-radius: 100px;
-                    min-width: 25px;
-                    width: 25px !important;
-                    height: 25px !important;
-                    font-size: 14px;
-                }  
-        }
-        .buttons_add{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            .add_button_style{
-                border-radius: 100px !important;
-                border: 1px solid white !important;  
-                font-weight: 500 !important;
-                font-size: 22px !important;
-                background-color: transparent !important;
-                width: 80px !important;
-                margin-right: 1rem !important;
-                padding: 10px 20px !important;
+}
+.buttons_container{
+    width: auto;
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    .flex_title{
+        display: flex;
+        padding-bottom: 1rem;
+        h5{
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 22px;
             }
-        }
-        .buttons{
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            button{
+            p{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                margin-right: .5rem;
+                border: 1px solid white;
+                padding: .2rem;
+                border-radius: 100px;
+                min-width: 25px;
+                width: 25px !important;
+                height: 25px !important;
+                font-size: 14px;
+            }  
+    }
+    .buttons_add{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .add_button_style{
             border-radius: 100px !important;
-            min-width: 50px !important;
-            width: 50px !important;
-            height: 50px !important;
-            border: 1px solid white; 
-            margin: 0 .5rem !important;
-            padding: 0 !important;
-            &:hover{
-                border: 3px solid white;
-            }
-            &:focus{
-                border: 3px solid white;
-            }
-            }
-            .black{
-                background-color: #1F1F1F !important;
-            }
-            .blue{
-                background-color: #3EADBF !important;
-            }
-            .yellow{
-                background-color: #CFAD42 !important;
-            }
-            .size{
-                font-weight: 500 !important;
-                font-size: 22px !important;
-                background: transparent;
-            }
+            border: 1px solid white !important;  
+            font-weight: 500 !important;
+            font-size: 22px !important;
+            background-color: transparent !important;
+            width: 80px !important;
+            margin-right: 1rem !important;
+            padding: 10px 20px !important;
         }
     }
 }
+.buttons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    button{
+    border-radius: 100px !important;
+    min-width: 50px !important;
+    width: 50px !important;
+    height: 50px !important;
+    border: 1px solid white; 
+    margin: 0 .5rem !important;
+    padding: 0 !important;
+    &:hover{
+        border: 3px solid white;
+    }
+    &:focus{
+        border: 3px solid white;
+    }
+    }
+    .black{
+        background-color: #1F1F1F !important;
+    }
+    .blue{
+        background-color: #3EADBF !important;
+    }
+    .yellow{
+        background-color: #CFAD42 !important;
+    }
+    .size{
+        font-weight: 500 !important;
+        font-size: 22px !important;
+        background: transparent;
+    }
+}
+
 .selection_container{
     background: linear-gradient(0deg, #1F1F1F, #1F1F1F);
     box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.67);
@@ -105,7 +106,7 @@
         padding: 1rem 2rem;
         .flex_container{
             display: flex;
-            justify-content: flex-start;
+            justify-content: space-between;
             align-items: center;
             padding: .5rem 0;
             .flex{
@@ -127,6 +128,11 @@
                 justify-content: center;
                 align-items: center;
             }
+        }
+        .close_btn{
+            background-color: transparent !important;
+            padding: .5rem;
+
         }
     }
     }

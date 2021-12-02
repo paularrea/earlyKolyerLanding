@@ -11,6 +11,9 @@ const Checkout = ({ productsToCheckout, finished }) => {
     const stripe = await getStripe();
     const { error } = await stripe.redirectToCheckout({
       mode: "payment",
+      shippingAddressCollection: {
+        allowedCountries: ['ES'],
+      },
       lineItems: productsToCheckout,
       successUrl: `https://testlanding.kolyy.com/`,
       cancelUrl: `https://testlanding.kolyy.com/comprar-collar-kolyy/`,

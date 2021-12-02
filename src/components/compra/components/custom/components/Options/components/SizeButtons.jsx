@@ -4,7 +4,7 @@ import {
   buttons,
   size,
   flex_title,
-} from "../custom.module.scss";
+} from "../../custom.module.scss";
 
 const SizeButtons = ({ addSizeToSelected, selected }) => {
   return (

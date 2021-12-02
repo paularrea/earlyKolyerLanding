@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Checkout from "../../../../../Stripe/checkout";
-import { buy_button_container } from "../custom.module.scss";
+import Checkout from "../../../../../../../Stripe/checkout";
+import { buy_button_container } from "../../custom.module.scss";
 
 const BuyButton = ({ productsToCheckout, displayProducts, finished }) => {
   const [total, setTotal] = useState(0);

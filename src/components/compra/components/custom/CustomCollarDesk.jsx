@@ -9,12 +9,12 @@ import {
   swapper_container,
   iva,
   button,
-  ahorro
-} from "./custom.module.scss";
-import Checkout from "../../../../Stripe/checkout"
+  ahorro,
+} from "./components/custom.module.scss";
+import Checkout from "../../../../Stripe/checkout";
 import TechSwapper from "../../../LandingComponents/Specifications/components/TechSwapper/TechSwapper";
-import ColorButtons from "./components/ColorButtons";
-import SizeButtons from "./components/SizeButtons";
+import ColorButtons from "./components/Options/components/ColorButtons";
+import SizeButtons from "./components/Options/components/SizeButtons";
 
 const CustomCollarDesk = ({ selected, showCollar, addSizeToSelected }) => {
   return (
@@ -34,21 +34,24 @@ const CustomCollarDesk = ({ selected, showCollar, addSizeToSelected }) => {
           </div>
           <hr />
           <div className={price_container}>
-              <p className={ahorro}>Ahorras 65€</p>
+            <p className={ahorro}>Ahorras 65€</p>
             <h3>
               TOTAL €147
               <span>€210</span>
             </h3>
             <p className={iva}>IVA incl.</p>
             <div className={button}>
-              <Checkout selected={selected}/>
+              <Checkout selected={selected} />
             </div>
           </div>
         </div>
       </section>
       <section className={flex_selection}>
         <ColorButtons selected={selected} showCollar={showCollar} />
-        <SizeButtons selected={selected} addSizeToSelected={addSizeToSelected} />
+        <SizeButtons
+          selected={selected}
+          addSizeToSelected={addSizeToSelected}
+        />
       </section>
     </div>
   );

@@ -5,15 +5,17 @@ import {
   value,
   flex,
   flex_container,
+  close_btn
 } from "../custom.module.scss";
-import BuyButton from "./BuyButton";
+import BuyButton from "./components/BuyButton";
 
 const SelectedOptions = ({
   setProductsToCheckout,
   setDisplayProducts,
   productsToCheckout,
   displayProducts,
-  finished
+  finished,
+  setFinished
 }) => {
   const [filteredToCheckout, setFilteredToCheckout] = useState(
     productsToCheckout
@@ -29,6 +31,7 @@ const SelectedOptions = ({
     setFilteredToSelection(
       displayProducts.filter((product) => product.checkout.price !== productId)
     );
+    // if (!filteredToSelection.length) setFinished(false);
   };
 
   useEffect(() => {
@@ -37,7 +40,7 @@ const SelectedOptions = ({
   }, [filteredToCheckout]);
 
   return (
-    <div className={selection_container}>
+    <div id="go_to_checkout" className={selection_container}>
       <BuyButton finished={finished} displayProducts={displayProducts} productsToCheckout={productsToCheckout} />
       <div className={user_selection}>
         <h5>Tu selección:</h5>
@@ -55,7 +58,7 @@ const SelectedOptions = ({
                 <p>Talla</p>
                 <div className={value}>{product.size && product.size}</div>
               </div>
-              <button value={product.checkout.price} onClick={() => removeProduct(product.checkout.price)}>X</button>
+              <button className={close_btn} value={product.checkout.price} onClick={() => removeProduct(product.checkout.price)}>X</button>
             </div>
           );
         })}
