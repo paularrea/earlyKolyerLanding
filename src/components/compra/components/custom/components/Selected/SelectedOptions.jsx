@@ -5,7 +5,7 @@ import {
   value,
   flex,
   flex_container,
-  close_btn
+  close_btn,
 } from "../custom.module.scss";
 import BuyButton from "./components/BuyButton";
 
@@ -15,7 +15,9 @@ const SelectedOptions = ({
   productsToCheckout,
   displayProducts,
   finished,
-  setFinished
+  setFinished,
+  sentToStripe,
+  pushCollarToArray
 }) => {
   const [filteredToCheckout, setFilteredToCheckout] = useState(
     productsToCheckout
@@ -35,12 +37,11 @@ const SelectedOptions = ({
 
   useEffect(() => {
     setProductsToCheckout(filteredToCheckout);
-    setDisplayProducts(filteredToSelection)
+    setDisplayProducts(filteredToSelection);
   }, [filteredToCheckout]);
 
   return (
     <div id="go_to_checkout" className={selection_container}>
-      <BuyButton setFinished={setFinished} finished={finished} displayProducts={displayProducts} productsToCheckout={productsToCheckout} />
       <div className={user_selection}>
         <h5>Tu selección:</h5>
         {displayProducts.map((product) => {
@@ -57,11 +58,25 @@ const SelectedOptions = ({
                 <p>Talla</p>
                 <div className={value}>{product.size && product.size}</div>
               </div>
-              <button className={close_btn} value={product.checkout.price} onClick={() => removeProduct(product.checkout.price)}>X</button>
+              <button
+                className={close_btn}
+                value={product.checkout.price}
+                onClick={() => removeProduct(product.checkout.price)}
+              >
+                X
+              </button>
             </div>
           );
         })}
       </div>
+      <BuyButton
+      pushCollarToArray={pushCollarToArray}
+        sentToStripe={sentToStripe}
+        setFinished={setFinished}
+        finished={finished}
+        displayProducts={displayProducts}
+        productsToCheckout={productsToCheckout}
+      />
     </div>
   );
 };

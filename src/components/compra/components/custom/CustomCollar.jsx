@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import SelectedOptions from "./components/Selected/SelectedOptions";
 import CollarOptions from "./components/Options/CollarOptions";
 import {
@@ -11,24 +11,55 @@ const CustomCollar = ({ setSelected, selected }) => {
     displayCustomCollarSelection,
     setDisplayCustomCollarSelection,
   ] = useState(0);
+
   const [finished, setFinished] = useState(false);
   const [displayProducts, setDisplayProducts] = useState([]);
   const [productsToCheckout, setProductsToCheckout] = useState([]);
-
-  console.log(productsToCheckout, "array of products to checkout");
+  const [sentToStripe, setSendToStripe] = useState([]);
 
   const pushCollarToArray = () => {
     setDisplayCustomCollarSelection(displayCustomCollarSelection + 1);
-    setDisplayProducts((prevArray) => [...prevArray, selected]);
-    setProductsToCheckout((prevArray) => [...prevArray, selected.checkout]);
+    // setDisplayProducts((prevArray) => [...prevArray, selected]);
+    // setProductsToCheckout((prevArray) => [...prevArray, selected.checkout]);
     setSelected({});
   };
 
   const finishAndPay = () => {
     setDisplayProducts((prevArray) => [...prevArray, selected]);
     setProductsToCheckout((prevArray) => [...prevArray, selected.checkout]);
+    // setSelected({});
     setFinished(true);
   };
+
+  useEffect(() => {
+    function findOcc(arr, key) {
+      let arr2 = [];
+      arr.forEach((x) => {
+        if (
+          arr2.some((val) => {
+            return val[key] == x[key];
+          })
+        ) {
+          arr2.forEach((k) => {
+            if (k[key] === x[key]) {
+              k["quantity"]++;
+            }
+          });
+        } else {
+          let a = {};
+          a[key] = x[key];
+          a["quantity"] = 1;
+          arr2.push(a);
+          return
+        }
+      });
+      return arr2;
+    }
+    setSendToStripe(
+      productsToCheckout && findOcc(productsToCheckout, "price")
+    );
+  }, [productsToCheckout]);
+
 
   return (
     <div
@@ -71,7 +102,10 @@ const CustomCollar = ({ setSelected, selected }) => {
       </div>
       <div className={selected_options_container}>
         <SelectedOptions
+        pushCollarToArray={pushCollarToArray}
+        sentToStripe={sentToStripe}
           finished={finished}
+          selected={selected}
           setFinished={setFinished}
           displayProducts={displayProducts}
           productsToCheckout={productsToCheckout}

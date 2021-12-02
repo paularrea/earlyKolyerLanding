@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { getStripe } from "./Stripe";
 import { button } from "./stripe.module.scss";
 
-const Checkout = ({ productsToCheckout, finished, setFinished }) => {
+const Checkout = ({ sentToStripe, finished, setFinished }) => {
   const [loading, setLoading] = useState(false);
 
   const redirectToCheckout = async (event) => {
@@ -14,7 +14,7 @@ const Checkout = ({ productsToCheckout, finished, setFinished }) => {
       shippingAddressCollection: {
         allowedCountries: ['ES'],
       },
-      lineItems: productsToCheckout,
+      lineItems: sentToStripe,
       successUrl: `https://testlanding.kolyy.com/`,
       cancelUrl: `https://testlanding.kolyy.com/comprar-collar-kolyy/`,
     });
@@ -25,8 +25,8 @@ const Checkout = ({ productsToCheckout, finished, setFinished }) => {
   };
 
   useEffect(() => {
-    !productsToCheckout.length ? setFinished(false) : setFinished(true);
-  }, [productsToCheckout])
+    !sentToStripe.length ? setFinished(false) : setFinished(true);
+  }, [sentToStripe])
 
 
   return (
