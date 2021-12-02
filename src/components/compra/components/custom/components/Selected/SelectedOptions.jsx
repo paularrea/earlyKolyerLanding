@@ -31,7 +31,6 @@ const SelectedOptions = ({
     setFilteredToSelection(
       displayProducts.filter((product) => product.checkout.price !== productId)
     );
-    // if (!filteredToSelection.length) setFinished(false);
   };
 
   useEffect(() => {
