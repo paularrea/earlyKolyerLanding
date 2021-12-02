@@ -60,7 +60,6 @@ const CustomCollar = ({ setSelected, selected }) => {
     );
   }, [productsToCheckout]);
 
-
   return (
     <div
       className={flex_custom_container}
