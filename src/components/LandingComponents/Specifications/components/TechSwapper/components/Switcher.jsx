@@ -11,24 +11,19 @@ const Switcher = ({ setSelectedTab, selected }) => {
 
   const tabCollection = [
     {
-      name: "Collar",
+      name: "Dispositivo",
       number: 1,
       url: collarIcon,
     },
     {
-      name: "App",
+      name: "Collar",
       number: 2,
       url: appIcon,
     },
     {
-      name: "Tech",
+      name: "Especificaciones",
       number: 3,
       url: techIcon,
-    },
-    {
-      name: "Garantía",
-      number: 4,
-      url: garantiaIcon,
     },
   ];
   return (

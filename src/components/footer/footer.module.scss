@@ -41,7 +41,7 @@ h5{
 .contact{
     padding-bottom: 4rem;
     h4,h3 {
-        padding: 3rem 0 1rem 0;
+        padding-bottom: 1rem;
         font-size: 24px;
         font-weight: 400;
         margin: 0;
@@ -177,7 +177,7 @@ section{
             width: 100%;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
             .logo_text{
                 width: 60%;
                 .intro{
@@ -259,7 +259,7 @@ section{
 }
 @media (min-width: 1100px) {
     .container{
-        padding: 5rem; 
+        padding: 4rem 5vw 2rem 5vw; 
     }
     .contact_div{
         div{
@@ -275,94 +275,4 @@ section{
             }
         }
     }
-}
-@media (min-width: 1600px) {
-    .container{
-        padding: 5rem 10rem; 
-    }
-}
-@media (min-width: 1800px) {
-    .container{
-        padding: 5rem 15rem; 
-    }
-}
-@media (min-width: 2000px) {
-    .container{
-        padding: 5rem 15rem; 
-    }
-}
-@media (min-width: 2200px) {
-    .container{
-        padding: 5rem 25rem; 
-    }
-}
-@media (min-width: 2400px) {
-    .container{
-        padding: 5rem 30rem; 
-    }
-}
-@media (min-width: 2600px) {
-    .container{
-        padding: 5rem 35rem; 
-    }
-}
-@media (min-width: 2800px) {
-    .container{
-        padding: 5rem 40rem; 
-    }
-}
-@media (min-width: 3000px) {
-    .container{
-        padding: 5rem 50rem; 
-    }
-}
-@media (min-width: 3200px) {
-    .container{
-        padding: 5rem 60rem; 
-    }
-}
-@media (min-width: 3400px) {
-    .container{
-        padding: 5rem 65rem; 
-    }
-}
-@media (min-width: 3600px) {
-    .container{
-        padding: 5rem 70rem; 
-    }
-}
-@media (min-width: 3800px) {
-    .container{
-        padding: 5rem 75rem; 
-    }
-}
-@media (min-width: 4000px) {
-    .container{
-        padding: 5rem 80rem; 
-    }
-}
-@media (min-width: 4200px) {
-    .container{
-        padding: 5rem 85rem; 
-    }
-}
-@media (min-width: 4400px) {
-    .container{
-        padding: 5rem 90rem; 
-    }
-}
-@media (min-width: 4600px) {
-    .container{
-        padding: 5rem 95rem; 
-    }
-}
-@media (min-width: 4800px) {
-    .container{
-        padding: 5rem 100rem; 
-    }
-}
-@media (min-width: 5000px) {
-    .container{
-        padding: 5rem 110rem; 
-}
 }

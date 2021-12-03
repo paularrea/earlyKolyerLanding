@@ -16,12 +16,8 @@ import SizesInfo from "./components/ColorSwapper/sizes/SizesInfo";
 const Specifications = () => {
   const [bgColor, setBgColor] = useState("#434343");
   return (
-    <>
-      <div
-        id="especificaciones"
-        className={container}
-        style={{ backgroundColor: bgColor }}
-      >
+    <div id="especificaciones">
+      <div className={container} style={{ backgroundColor: bgColor }}>
         <section>
           <h4>Elige el tuyo</h4>
           <p>3 colores y 4 tamaños para elegir.</p>
@@ -46,7 +42,7 @@ const Specifications = () => {
         </section>
       </div>
       <Videos />
-    </>
+    </div>
   );
 };
 

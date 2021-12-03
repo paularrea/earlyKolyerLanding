@@ -11,9 +11,6 @@ const Sponsors = () => {
         <h4>Colaboradores</h4>
         <div className={flex_container}>
           <div className={img}>
-            <MovistarIcon />
-          </div>
-          <div className={img}>
             <UabIcon />
           </div>
           <div className={img}>

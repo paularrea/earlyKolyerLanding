@@ -18,7 +18,7 @@ const CustomCollar = ({ setSelected, selected }) => {
   const [productsToCheckout, setProductsToCheckout] = useState([]);
   const [sentToStripe, setSendToStripe] = useState([]);
   const [openSize, setOpenSize] = useState(false);
-  
+
   const openSizeModal = () => {
     setOpenSize(!openSize);
   };
@@ -79,9 +79,10 @@ const CustomCollar = ({ setSelected, selected }) => {
           lineHeight: "24px",
         }}
       >
-        Personaliza tu Kolyy{" "}
-        {productsToCheckout.length !== 0 && (
-          <p>nº {productsToCheckout.length + 1}</p>
+        {productsToCheckout.length !== 0 ? (
+          <p>Personaliza otro collar</p>
+        ) : (
+          <p>Personaliza tu Kolyy</p>
         )}
       </h3>
       <div id="buy-collar">

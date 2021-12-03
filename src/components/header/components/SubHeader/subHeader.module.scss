@@ -5,6 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .active{
+        background-color: white;
+        color: $greenKolyy;
+    }
     a{
         cursor: pointer;
         font-weight: 300;

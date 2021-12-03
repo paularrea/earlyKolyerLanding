@@ -16,3 +16,17 @@
         }
     }
 }
+.dots{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 20vw;
+    div{
+        width: 15px;
+        border-radius: 100px;
+        background-color: transparent;
+        height: 15px;
+        border: 1px solid white;
+    }
+}

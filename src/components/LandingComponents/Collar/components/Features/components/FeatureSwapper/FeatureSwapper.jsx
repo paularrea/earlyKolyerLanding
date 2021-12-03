@@ -19,10 +19,13 @@ const FeatureSwapper = () => {
     {
       text: (
         <p>
-          Tracking de <b>pasos</b> y <b>tiempo de actividad.</b> de tu perro.
+          Tracking de <b>pasos</b> y <b>tiempo de actividad</b> de tu perro.
+          <br />
           Reportes{" "}
-          <b>diarios, semanales y menusales. Objetivos personalizables.</b> a tu
-          perro.
+          <b>
+            diarios, semanales y menusales. <br /> Objetivos personalizables.
+          </b>{" "}
+          a tu perro.
         </p>
       ),
       img: <MockupActivity />,
@@ -31,9 +34,11 @@ const FeatureSwapper = () => {
     {
       text: (
         <p>
-          <b>Seguimiento y sugerencias de </b>profesionales veterinarios.{" "}
-          <b>Informes periódicos</b> de recomendaciones. Servicio de{" "}
-          <b>consultas 24h.</b>
+          <b>Seguimiento y sugerencias de </b>profesionales veterinarios.
+          <br />
+          <b>Informes periódicos</b> de recomendaciones.
+          <br />
+          Servicio de <b>consultas 24h.</b>
         </p>
       ),
       img: <MockupHealth />,

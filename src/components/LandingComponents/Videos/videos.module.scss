@@ -64,3 +64,15 @@
     }
     } 
 }
+
+@media (max-width: 340px) {
+    .video_container{
+    .title_abs{
+        h1{
+            font-weight: 800;
+            font-size: 40px;
+            line-height: 43px;
+        }
+    }
+    }
+}

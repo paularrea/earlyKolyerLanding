@@ -1,42 +1,46 @@
 import React, { useState } from "react";
 import Switcher from "./components/Switcher";
-import {
-  container,
-  hide,
-  tabInfo,
-} from "./techSwapper.module.scss";
+import { container, hide, tabInfo } from "./techSwapper.module.scss";
 
 const TechSwapper = () => {
   const [selected, setSelectedTab] = useState(1);
 
   const selectedTab = [
     {
-      tech1: "Dimensiones: 3x15 cm.",
-      tech2: "Peso: 600gr.",
-      tech3: "Téxtil: nylon con doble capa.",
-      tech4: "Batería: ciclo de carga cada 15 días.",
+      tech: (
+        <div>
+          <p>Dimensiones: 7,5cm (largo) x 4,1cm (ancho) x 2,5cm (alto).</p>
+          <br />
+          <p>Peso: 60g.</p>
+          <br />
+          <p>3 LED multicolor + 3 LED iluminación.</p>
+          <br />
+          <p>Puerto de carga: micro-USB.</p>
+          <br />
+          <p>Batería: LiPo 1100 mAh.</p>
+        </div>
+      ),
       index: 1,
     },
     {
-      tech1: "Gestiona diferentes usuarios.",
-      tech2: "Una única app para todos los collares.",
-      tech3: "Estés donde estés.",
-      tech4: "",
+      tech: (
+        <div>
+          <p>Peso del collar: hasta 140g (dependiendo de la talla).</p>
+        </div>
+      ),
       index: 2,
     },
     {
-      tech1: "Dimensiones: 3x15 cm.",
-      tech2: "Peso: 600gr.",
-      tech3: "Téxtil: nylon con doble capa.",
-      tech4: "Batería: ciclo de carga cada 15 días.",
+      tech: (
+        <div>
+          <p>Resistente al agua (IP67).</p>
+          <br />
+          <p>Sumergible hasta 1m (IP67).</p>
+          <br />
+          <p>Resistente al polvo y arena (IP67).</p>
+        </div>
+      ),
       index: 3,
-    },
-    {
-      tech1: "Dimensiones: 3x15 cm.",
-      tech2: "Peso: 600gr.",
-      tech3: "Téxtil: nylon con doble capa.",
-      tech4: "Batería: ciclo de carga cada 15 días.",
-      index: 4,
     },
   ];
   return (
@@ -44,10 +48,7 @@ const TechSwapper = () => {
       <Switcher selected={selected} setSelectedTab={setSelectedTab} />
       {selectedTab.map((item) => (
         <div className={selected === item.index ? tabInfo : hide}>
-          <p>{item.tech1}</p>
-          <p>{item.tech2}</p>
-          <p>{item.tech3}</p>
-          <p>{item.tech4}</p>
+          <>{item.tech}</>
         </div>
       ))}
     </div>

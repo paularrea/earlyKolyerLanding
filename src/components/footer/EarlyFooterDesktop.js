@@ -8,35 +8,38 @@ import {
   contact,
   intro,
 } from "./footer.module.scss";
-
 import Contacts from "./components/contacts";
 import MediaList from "./components/mediaList";
 import Privacity from "./components/privacity";
-import PageLinks from "./components/pageLinks";
 
-const FooterDesktop = () => {
+const EarlyFooterDesktop = () => {
   if (typeof window !== "undefined") {
     require("smooth-scroll")('a[href*="#"]');
   }
   return (
     <div className={container}>
       <div className={flex_container}>
-        <div className={logo_text}>
+        <div
+          className={logo_text}
+          style={{
+            height: '350px',
+            display: "flex",
+            justifyContent: "space-between",
+            flexDirection: "column",
+            alignItems: "flex-start",
+          }}
+        >
           <div className={intro}>
             <Link to="/collar-para-cuidar-mi-perro">
               <Logo />
             </Link>
-            <p>
-              Revoluciona la conexión con tu perro.
-            </p>
+            <p>Revoluciona la conexión con tu perro.</p>
           </div>
-          <PageLinks />
+          <Privacity />
         </div>
 
         <div className={contact}>
-          <h4>
-            ¿Tienes alguna pregunta?
-          </h4>
+          <h4>¿Tienes alguna pregunta?</h4>
           <button style={{ fontSize: "13px" }}>
             <a
               style={{ color: "white" }}
@@ -54,12 +57,8 @@ const FooterDesktop = () => {
           <MediaList />
         </div>
       </div>
-
-      <div className={flex_container}>
-        <Privacity />
-      </div>
     </div>
   );
 };
 
-export default FooterDesktop;
+export default EarlyFooterDesktop;

@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { sub_header_nav } from "./subHeader.module.scss";
+import { sub_header_nav, active } from "./subHeader.module.scss";
 
 const SubHeader = () => {
   return (
     <nav className={sub_header_nav}>
       <Link
-        activeClass="active"
+        activeClass={active}
         to="el-collar"
         spy={true}
         smooth={true}
@@ -16,7 +16,7 @@ const SubHeader = () => {
         El collar
       </Link>
       <Link
-        activeClass="active"
+        activeClass={active}
         to="especificaciones"
         spy={true}
         smooth={true}
@@ -26,7 +26,7 @@ const SubHeader = () => {
         Especificaciones
       </Link>
       <Link
-        activeClass="active"
+        activeClass={active}
         to="kolyy"
         spy={true}
         smooth={true}
@@ -36,7 +36,7 @@ const SubHeader = () => {
         Kolyy
       </Link>
       <Link
-        activeClass="active"
+        activeClass={active}
         to="contacto"
         spy={true}
         smooth={true}
