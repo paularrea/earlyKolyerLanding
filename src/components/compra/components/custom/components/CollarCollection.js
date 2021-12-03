@@ -1,7 +1,7 @@
 import React from "react";
 import BlackCollar from "../../../../LandingComponents/Specifications/components/ColorSwapper/BlackCollar";
 import BlueCollar from "../../../../LandingComponents/Specifications/components/ColorSwapper/BlueCollar";
-import YellowCollar from "../../../../LandingComponents/Specifications/components/ColorSwapper/YellowCollar";
+import YellowCollar from "../../../../LandingComponents/Specifications/components/ColorSwapper/RedCollar";
 
 export const collarCollection = [
   {

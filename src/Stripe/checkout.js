@@ -12,12 +12,12 @@ const Checkout = ({ sentToStripe, finished, setFinished }) => {
     const { error } = await stripe.redirectToCheckout({
       mode: "payment",
       shippingAddressCollection: {
-        allowedCountries: ['ES'],
+        allowedCountries: ["ES"],
       },
-      
+      locale: "es",
       lineItems: sentToStripe,
-      successUrl: `https://reserva.kolyy.com/success`,
-      cancelUrl: `https://reserva.kolyy.com/comprar-collar-kolyy/`,
+      successUrl: `https://kolyy-landing.netlify.app`,
+      cancelUrl: `https://kolyy-landing.netlify.app/comprar-collar-kolyy/`,
     });
     if (error) {
       console.warn("Error:", error);
@@ -27,8 +27,7 @@ const Checkout = ({ sentToStripe, finished, setFinished }) => {
 
   useEffect(() => {
     !sentToStripe.length ? setFinished(false) : setFinished(true);
-  }, [sentToStripe])
-
+  }, [sentToStripe]);
 
   return (
     <button

@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-grid-carousel";
-import YellowCollar from "../YellowCollar";
+import RedCollar from "../RedCollar";
 import BlueCollar from "../BlueCollar";
 import BlackCollar from "../BlackCollar";
 import "../../../../../../styles/carousel.css";
@@ -10,12 +10,12 @@ const CollarCarousel = ({ setBgColor }) => {
   const collarCollection = [
     {
       index: 1,
-      img: <YellowCollar />,
+      img: <RedCollar />,
       bgColor: "#744254",
     },
     {
       index: 2,
-      img: <BlackCollar />,
+      img: <BlackCollar/>,
       bgColor: "#434343",
     },
     {

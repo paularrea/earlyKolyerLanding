@@ -1,7 +1,7 @@
 import React from 'react'
 import { StaticImage } from "gatsby-plugin-image";
 
-const YellowCollar = () => {
+const RedCollar = () => {
   return (
     <StaticImage
     placeholder="blurred"
@@ -11,4 +11,4 @@ const YellowCollar = () => {
   )
 }
 
-export default YellowCollar
+export default RedCollar

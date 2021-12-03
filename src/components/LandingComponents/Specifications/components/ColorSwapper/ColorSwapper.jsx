@@ -1,7 +1,7 @@
 import React from "react";
 import { flex_scroll, img, dots } from "./colorSwapper.module.scss";
 import { InView } from "react-intersection-observer";
-import YellowCollar from "./YellowCollar";
+import RedCollar from "./RedCollar";
 import BlackCollar from "./BlackCollar";
 import BlueCollar from "./BlueCollar";
 import SizesInfo from "./sizes/SizesInfo";
@@ -16,7 +16,7 @@ const ColorSwapper = ({ setBgColor, bgColor }) => {
           as="div"
           onChange={(inView) => inView && setBgColor("#744254")}
         >
-          <YellowCollar />
+          <RedCollar />
         </InView>
         <InView
           className={img}
