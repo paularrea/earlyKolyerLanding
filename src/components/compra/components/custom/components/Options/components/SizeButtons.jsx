@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   buttons_container,
   buttons,
@@ -6,12 +6,23 @@ import {
   flex_title,
 } from "../../custom.module.scss";
 
-const SizeButtons = ({ addSizeToSelected, selected }) => {
+const SizeButtons = ({ addSizeToSelected, selected, openModal }) => {
   return (
     <div className={buttons_container}>
       <div className={flex_title}>
         <p>2</p>
         <h5>Paso 2: tamaño</h5>
+        <div
+          style={{
+            marginLeft:'1rem',
+            fontSize: "12px",
+            textDecoration: "underline",
+            cursor: 'pointer'
+          }}
+          onClick={openModal}
+        >
+          Consulta las tallas
+        </div>
       </div>
       <div className={buttons}>
         <button

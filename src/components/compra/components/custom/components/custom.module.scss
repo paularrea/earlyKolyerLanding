@@ -1,5 +1,6 @@
 .flex_custom_container{
     padding: 2rem 0 0 0;
+    position: relative;
 }
 .container{
     padding: 0 5vw;
@@ -46,17 +47,40 @@
     }
 }
 .add_button{
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    .button{
         background-color: transparent !important;
         border-radius: 100px !important;
-        border: none !important;
+        border: 1px solid white !important;
         min-width: 50px !important;
         margin: 0 .5rem !important;
-        padding: 0 0 2rem 0 !important;
         font-size: 18px !important;
+        padding: .3rem .5rem !important;
+        font-weight: 300 !important;
+        line-height: 22px !important;
+        &:hover{
+            color: black;
+            background:white !important;
+        }
+        &:focus{
+            color: black;
+            background:white !important;
+        }
+
+}
+.finish_selection_button{
+    margin: 0 auto !important;
+    background-color: transparent !important;
+    border-radius: 100px !important;
+    border: none !important;
+    min-width: 50px !important;
+    font-size: 18px !important;
+    padding: .3rem .5rem !important;
+    font-weight: 300 !important;
+    line-height: 22px !important;
+    &:hover{
+        text-decoration: underline !important;
+    }
+    &:focus{
+        text-decoration: underline !important;
     }
 }
 .buttons{
@@ -150,7 +174,7 @@
     .buy_button_container{
         padding: 1rem 5vw;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         div{
             h5{
@@ -181,6 +205,7 @@
             border-radius: 25.5px;
             padding: 5px 20px;
             margin: .5rem 0;
+            margin-left: 2rem;
         }
     }
 }

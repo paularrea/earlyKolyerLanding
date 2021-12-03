@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import IntroInfo from "../../../LandingComponents/Collar/components/introInfo/IntroInfo";
 import ImgIntroCard from "./ImgIntroCard";
 import Button from "../Button";
@@ -10,22 +10,33 @@ import {
   text,
   abs,
   btn_container,
+  only_kolyer_btn
 } from "./introCard.module.scss";
 import { Link } from "react-scroll";
 import SubscriptionModal from "./components/SubscriptionModal";
 import MediaQuery from "react-responsive";
+import SubscriptionPlan from "../Modals/SubscriptionPlan";
 
 const IntroCard = () => {
+  const [openSubscription, setOpenSubscription] = useState(false);
+  const openSubscriptionModal = () => {
+    setOpenSubscription(!openSubscription);
+  };
+
   return (
     <div className={container}>
+      {openSubscription && (
+        <SubscriptionPlan openModal={openSubscriptionModal} />
+      )}
       <div className={img}>
         <ImgIntroCard />
       </div>
       <div className={abs}>
+        <button className={only_kolyer_btn} onClick={openSubscriptionModal}>
+        <b>Sólo Early kolyers</b>
+        </button>
         <div className={info_container}>
-          <h4>
-            Collar kolyy + plan de suscripción <span>?</span>
-          </h4>
+          <h4>Collar kolyy + plan de suscripción</h4>
           <SubscriptionModal />
           <section className={flex}>
             <div>

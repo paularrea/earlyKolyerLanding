@@ -1,0 +1,44 @@
+.container{
+    border-radius: 15px;
+    background: #FFFFFF;
+    margin: 1.5rem 0;
+    section{
+        background: #30AAAA;
+        border-radius: 15px;
+        color: white;
+        text-align: center;
+        h4{
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 27px;
+            padding: 1rem 0;
+        }
+        .flex_container{
+            border-top: 1px solid white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            >div{
+                padding: .5rem 0;
+                width: 50%;
+                p{
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                h5{
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+    .list{
+        padding: 1rem;
+        p,li{
+            font-size: 14px;
+            line-height: 19px;
+            font-weight: 300;
+        }
+    }
+}

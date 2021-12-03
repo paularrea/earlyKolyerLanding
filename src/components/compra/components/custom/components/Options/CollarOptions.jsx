@@ -10,6 +10,7 @@ const CollarOptions = ({
   selected,
   setSelected,
   displayProducts,
+  openModal,
   pushCollarToArray,
   finishAndPay,
   productsToCheckout
@@ -49,6 +50,7 @@ const CollarOptions = ({
           <div>
             <ColorButtons selected={selected} showCollar={showCollar} />
             <SizeButtons
+              openModal={openModal}
               selected={selected}
               addSizeToSelected={addSizeToSelected}
             />

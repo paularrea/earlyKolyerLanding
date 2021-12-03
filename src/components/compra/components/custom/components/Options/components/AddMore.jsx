@@ -1,14 +1,10 @@
 import React from "react";
-import MediaQuery from "react-responsive";
 import { Link } from "react-scroll";
-import { buttons_add, add_button_style } from "../../custom.module.scss";
+import { add_button } from "../../custom.module.scss";
 
 const AddMore = ({ pushCollarToArray, selected }) => {
   return (
-    <div className={buttons_add}>
-      <div>
-        <p>¿Quieres añadir otro collar?</p>
-      </div>
+    <div>
       <Link
         activeClass="active"
         to="buy-collar"
@@ -20,12 +16,13 @@ const AddMore = ({ pushCollarToArray, selected }) => {
         <button
           style={{
             color: selected && selected.size && !selected.size && "gray",
+            border: selected && selected.size && !selected.size && "1px solid gray",
           }}
-          className={add_button_style}
+          className={add_button}
           disabled={selected && selected.size && !selected.size}
           onClick={pushCollarToArray}
         >
-          Sí
+          + añadir otro collar
         </button>
       </Link>
     </div>

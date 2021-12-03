@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Checkout from "../../../../../../../Stripe/checkout";
 import { buy_button_container } from "../../custom.module.scss";
-import AddMore from "../../Options/components/AddMore";
 
 const BuyButton = ({
-  selected,
-  pushCollarToArray,
   displayProducts,
   finished,
   setFinished,
@@ -36,7 +33,6 @@ const BuyButton = ({
         </h5>
         <p>IVA incl.</p>
       </div>
-      <AddMore selected={selected} pushCollarToArray={pushCollarToArray} />
       <Checkout
         setFinished={setFinished}
         finished={finished}

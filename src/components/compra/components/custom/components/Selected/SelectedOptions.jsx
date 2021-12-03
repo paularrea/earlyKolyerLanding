@@ -7,6 +7,7 @@ import {
   flex_container,
   close_btn,
 } from "../custom.module.scss";
+import AddMore from "../Options/components/AddMore";
 import BuyButton from "./components/BuyButton";
 
 const SelectedOptions = ({
@@ -17,7 +18,8 @@ const SelectedOptions = ({
   finished,
   setFinished,
   sentToStripe,
-  pushCollarToArray
+  pushCollarToArray,
+  selected,
 }) => {
   const [filteredToCheckout, setFilteredToCheckout] = useState(
     productsToCheckout
@@ -43,7 +45,17 @@ const SelectedOptions = ({
   return (
     <div id="go_to_checkout" className={selection_container}>
       <div className={user_selection}>
-        <h5>Tu selección:</h5>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <h5>Tu selección:</h5>
+          <AddMore selected={selected} pushCollarToArray={pushCollarToArray} />
+        </div>
+
         {displayProducts.map((product) => {
           return (
             <div className={flex_container}>
@@ -70,7 +82,6 @@ const SelectedOptions = ({
         })}
       </div>
       <BuyButton
-      pushCollarToArray={pushCollarToArray}
         sentToStripe={sentToStripe}
         setFinished={setFinished}
         finished={finished}

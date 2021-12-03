@@ -14,9 +14,10 @@ const Checkout = ({ sentToStripe, finished, setFinished }) => {
       shippingAddressCollection: {
         allowedCountries: ['ES'],
       },
+      
       lineItems: sentToStripe,
-      successUrl: `https://testlanding.kolyy.com/`,
-      cancelUrl: `https://testlanding.kolyy.com/comprar-collar-kolyy/`,
+      successUrl: `https://reserva.kolyy.com/success`,
+      cancelUrl: `https://reserva.kolyy.com/comprar-collar-kolyy/`,
     });
     if (error) {
       console.warn("Error:", error);
