@@ -34,6 +34,7 @@
             margin-right: .5rem;
             }
             p{
+                width: fit-content;
                 white-space: nowrap;
                 color: $greenKolyy;
                 font-weight: 500 !important;
@@ -90,7 +91,7 @@
         }
         .img{
            width: 55vw;
-           max-width: 300px;
+           max-width: 400px;
         }
     }
 }
@@ -106,7 +107,7 @@
             justify-content: space-between;
             align-items: flex-end;
             .card_container{
-                width: 27vw;
+                width: 42vw;
             }
         }  
     }

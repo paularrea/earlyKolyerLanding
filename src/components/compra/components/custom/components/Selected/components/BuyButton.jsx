@@ -1,43 +1,36 @@
-import React, { useState, useEffect } from "react";
-import Checkout from "../../../../../../../Stripe/checkout";
-import { buy_button_container } from "../../custom.module.scss";
+import React from "react";
+import { buy_button_container, button } from "../../custom.module.scss";
 
-const BuyButton = ({
-  displayProducts,
-  finished,
-  setFinished,
-  sentToStripe,
-}) => {
-  const [total, setTotal] = useState(0);
-  const [totalBeforeDiscount, setTotalBeforeDiscount] = useState(0);
-
-  useEffect(() => {
-    setTotal(
-      displayProducts.length !== 0 &&
-        displayProducts.reduce((prev, cur) => prev + cur.price_30_off, 0)
-    );
-    setTotalBeforeDiscount(
-      displayProducts.length !== 0 &&
-        displayProducts.reduce(
-          (prev, cur) => prev + cur.price_before_30_discount,
-          0
-        )
-    );
-  }, [displayProducts]);
+const BuyButton = ({ displayProducts, stripeUrl }) => {
+  const priceForOneCollar = displayProducts.length === 1 && "147";
+  const priceForTwoCollar = displayProducts.length === 2 && "281,40";
+  const oneCollarBeforeDiscount = displayProducts.length === 1 && "210";
+  const twoCollarBeforeDiscount = displayProducts.length === 2 && "420";
 
   return (
     <div className={buy_button_container}>
-      <div>
-        <h5>
-          €{total} <span>{total && totalBeforeDiscount}</span>
-        </h5>
-        <p>IVA incl.</p>
-      </div>
-      <Checkout
-        setFinished={setFinished}
-        finished={finished}
-        sentToStripe={sentToStripe}
-      />
+      {displayProducts.length ? (
+        <>
+          <div>
+            <h5>
+              €{priceForOneCollar || priceForTwoCollar}{" "}
+              <span>{oneCollarBeforeDiscount || twoCollarBeforeDiscount}</span>
+            </h5>
+            <p>IVA incl.</p>
+          </div>
+
+          <a
+            rel="noreferrer"
+            target="_blank"
+            className={button}
+            href={stripeUrl}
+          >
+            Comprar
+          </a>
+        </>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

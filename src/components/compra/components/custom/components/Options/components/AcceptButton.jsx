@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { finish_selection_button } from "../../custom.module.scss";
+import { add_button } from "../../custom.module.scss";
 
 const AcceptButton = ({ finishAndPay, selected }) => {
   return (
@@ -14,7 +14,7 @@ const AcceptButton = ({ finishAndPay, selected }) => {
         duration={1000}
       >
         <button
-          className={finish_selection_button}
+          className={add_button}
           style={{
             color: !selected.size && "gray",
             border: !selected.size && "1px solid gray",
@@ -22,7 +22,7 @@ const AcceptButton = ({ finishAndPay, selected }) => {
           disabled={!selected.size}
           onClick={finishAndPay}
         >
-          Finalizar selección
+          añadir al carrito
         </button>
       </Link>
     </div>

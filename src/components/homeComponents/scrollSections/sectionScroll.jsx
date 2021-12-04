@@ -1,7 +1,7 @@
 import React from "react";
 import "./scrollSections.scss";
 import blueCollar from "../../../images/collar-perro-gps.png";
-import blackCollar from "../../../images/collar-perro-actividad.png";
+import blackCollar from "../../../images/collar-perro-kolyy.png";
 import yellowCollar from "../../../images/collar-perro-salud.png";
 
 import BgIntro1 from "./img/bgIntro1";

@@ -3,7 +3,7 @@ import {
   buttons,
   black,
   blue,
-  yellow,
+  red,
 } from "../../custom.module.scss";
 
 const numStyle = {
@@ -54,10 +54,10 @@ const ColorButtons = ({ showCollar, selected }) => {
             value="blue"
           ></button>
           <button
-            className={yellow}
-            style={{ border: selected.color === "yellow" && "4px solid white" }}
+            className={red}
+            style={{ border: selected.color === "red" && "4px solid white" }}
             onClick={showCollar}
-            value="yellow"
+            value="red"
           ></button>
         </div>
       </div>

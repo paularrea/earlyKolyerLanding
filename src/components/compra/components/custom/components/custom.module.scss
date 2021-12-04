@@ -49,18 +49,18 @@
 .add_button{
         background-color: transparent !important;
         border-radius: 100px !important;
-        border: 1px solid white !important;
+        border: 1px solid white;
         min-width: 50px !important;
         margin: 0 .5rem !important;
         font-size: 18px !important;
         padding: .3rem .5rem !important;
         font-weight: 300 !important;
         line-height: 22px !important;
-        &:hover{
+        &:hover:enabled{
             color: black;
             background:white !important;
         }
-        &:focus{
+        &:focus:enabled{
             color: black;
             background:white !important;
         }
@@ -106,10 +106,10 @@
         background-color: #1F1F1F !important;
     }
     .blue{
-        background-color: #3EADBF !important;
+        background-color: #05A9AB !important;
     }
-    .yellow{
-        background-color: #CFAD42 !important;
+    .red{
+        background-color: #744254 !important;
     }
     .size{
         font-weight: 500 !important;
@@ -195,7 +195,10 @@
                 line-height: 12px;
             }
         }
-        button{
+        .button{
+            background-color: #30AAAA;
+            cursor: pointer;
+            color: white;
             font-weight: 600;
             font-size: 18px;
             line-height: 22px;
@@ -206,6 +209,9 @@
             padding: 5px 20px;
             margin: .5rem 0;
             margin-left: 2rem;
+            &:hover{
+                background-color: #30aaaada;
+            }
         }
     }
 }
@@ -237,7 +243,7 @@
             margin: 0 auto;
             height: auto;
             img{
-                width: 100%;
+                width: 600px;
             }
         }
     }

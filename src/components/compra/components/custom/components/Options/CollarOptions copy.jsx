@@ -11,9 +11,12 @@ const CollarOptions = ({
   setSelected,
   displayProducts,
   openModal,
+  pushCollarToArray,
   finishAndPay,
+  productsToCheckout
 }) => {
   const [chooseSize, setChooseSize] = useState("");
+  const [productId, setProductId] = useState("");
   const [chooseColor, setChooseColor] = useState("black");
 
   const showCollar = (e) => {
@@ -33,6 +36,9 @@ const CollarOptions = ({
   }, [chooseColor]);
 
   useEffect(() => {
+    setProductId(
+      (selected["checkout"] = { price: products_30_off(selected), quantity: 1 })
+    );
     chooseSize && setSelected({ ...selected });
   }, [chooseSize]);
 
@@ -48,7 +54,10 @@ const CollarOptions = ({
               selected={selected}
               addSizeToSelected={addSizeToSelected}
             />
-            <AcceptButton selected={selected} finishAndPay={finishAndPay} />
+            <AcceptButton
+              selected={selected}
+              finishAndPay={finishAndPay}
+            />
           </div>
         </div>
       )}

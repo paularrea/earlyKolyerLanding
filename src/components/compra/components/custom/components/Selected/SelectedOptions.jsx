@@ -11,36 +11,29 @@ import AddMore from "../Options/components/AddMore";
 import BuyButton from "./components/BuyButton";
 
 const SelectedOptions = ({
-  setProductsToCheckout,
   setDisplayProducts,
-  productsToCheckout,
   displayProducts,
   finished,
   setFinished,
-  sentToStripe,
   pushCollarToArray,
   selected,
+  stripeUrl,
 }) => {
-  const [filteredToCheckout, setFilteredToCheckout] = useState(
-    productsToCheckout
-  );
   const [filteredToSelection, setFilteredToSelection] = useState(
     displayProducts
   );
 
-  const removeProduct = (productId) => {
-    setFilteredToCheckout(
-      productsToCheckout.filter((id) => id.price !== productId)
-    );
+  const removeProduct = (currentProduct) => {
     setFilteredToSelection(
-      displayProducts.filter((product) => product.checkout.price !== productId)
+      displayProducts.filter(
+        (product) => product.color + product.size !== currentProduct
+      )
     );
   };
 
   useEffect(() => {
-    setProductsToCheckout(filteredToCheckout);
     setDisplayProducts(filteredToSelection);
-  }, [filteredToCheckout]);
+  }, [filteredToSelection]);
 
   return (
     <div id="go_to_checkout" className={selection_container}>
@@ -53,40 +46,44 @@ const SelectedOptions = ({
           }}
         >
           <h5>Tu selección:</h5>
-          <AddMore selected={selected} pushCollarToArray={pushCollarToArray} />
+          <AddMore
+            displayProducts={displayProducts}
+            selected={selected}
+            pushCollarToArray={pushCollarToArray}
+          />
         </div>
 
-        {displayProducts.map((product) => {
-          return (
-            <div className={flex_container}>
-              <div className={flex}>
-                <p>Color</p>
-                <div
-                  style={{ background: product.bgColor }}
-                  className={value}
-                ></div>
+        {displayProducts &&
+          displayProducts.map((product) => {
+            return (
+              <div className={flex_container}>
+                <div className={flex}>
+                  <p>Color</p>
+                  <div
+                    style={{ background: product.bgColor }}
+                    className={value}
+                  ></div>
+                </div>
+                <div className={flex}>
+                  <p>Talla</p>
+                  <div className={value}>{product.size && product.size}</div>
+                </div>
+                <button
+                  className={close_btn}
+                  value={product.color + product.size}
+                  onClick={() => removeProduct(product.color + product.size)}
+                >
+                  X
+                </button>
               </div>
-              <div className={flex}>
-                <p>Talla</p>
-                <div className={value}>{product.size && product.size}</div>
-              </div>
-              <button
-                className={close_btn}
-                value={product.checkout.price}
-                onClick={() => removeProduct(product.checkout.price)}
-              >
-                X
-              </button>
-            </div>
-          );
-        })}
+            );
+          })}
       </div>
       <BuyButton
-        sentToStripe={sentToStripe}
+        stripeUrl={stripeUrl}
         setFinished={setFinished}
         finished={finished}
         displayProducts={displayProducts}
-        productsToCheckout={productsToCheckout}
       />
     </div>
   );

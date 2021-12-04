@@ -9,7 +9,6 @@ import TopBanner from "./components/banner/TopBanner";
 
 const Compra = () => {
   const [selected, setSelected] = useState({});
-
   return (
     <>
       <TopBanner />

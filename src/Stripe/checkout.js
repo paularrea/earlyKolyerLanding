@@ -25,9 +25,9 @@ const Checkout = ({ sentToStripe, finished, setFinished }) => {
     }
   };
 
-  useEffect(() => {
-    !sentToStripe.length ? setFinished(false) : setFinished(true);
-  }, [sentToStripe]);
+  // useEffect(() => {
+  //   !sentToStripe.length ? setFinished(false) : setFinished(true);
+  // }, [sentToStripe]);
 
   return (
     <button

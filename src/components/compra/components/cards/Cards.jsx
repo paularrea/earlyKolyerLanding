@@ -36,15 +36,15 @@ const Cards = () => {
       decimal: ",40",
       before: "€420",
     },
-    {
-      index: 3,
-      img: <ThreeCollar />,
-      deal: "-35%",
-      ahorro: "Ahorras 252€",
-      text: "Tres collares inteligentes a un precio único.",
-      price: "€409",
-      before: "€630",
-    },
+    // {
+    //   index: 3,
+    //   img: <ThreeCollar />,
+    //   deal: "-35%",
+    //   ahorro: "Ahorras 252€",
+    //   text: "Tres collares inteligentes a un precio único.",
+    //   price: "€409",
+    //   before: "€630",
+    // },
   ];
   return (
     <div className={cards_container}>
@@ -77,6 +77,7 @@ const Cards = () => {
                   to="buy-collar"
                   spy={true}
                   smooth={true}
+                  offset={-110}
                   duration={1000}
                 >
                   <button className={button}>Comprar</button>
