@@ -7,7 +7,7 @@ import MovistarIcon from "./MovistarIcon";
 const Sponsors = () => {
   return (
     <div className={container}>
-      <div className={sponsors_container}>
+      <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000" className={sponsors_container}>
         <h4>Colaboradores</h4>
         <div className={flex_container}>
           <div className={img}>

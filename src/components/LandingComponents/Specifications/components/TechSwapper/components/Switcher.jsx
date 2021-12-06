@@ -1,8 +1,7 @@
 import React from "react";
-import { tabs, tab, grayIcon, rotate } from "../techSwapper.module.scss";
+import { tabs, tab, tab_img, rotate } from "../techSwapper.module.scss";
 import appIcon from "../../../../../../images/icons/app_icon_tech.png";
 import collarIcon from "../../../../../../images/icons/collar_icon_tech.png";
-import techIcon from "../../../../../../images/icons/tech_icon.png";
 import garantiaIcon from "../../../../../../images/icons/garantia_icon.png";
 import arrow from "../../../../../../images/icons/tech_arrow.png";
 
@@ -23,7 +22,7 @@ const Switcher = ({ setSelectedTab, selected }) => {
     {
       name: "Especificaciones",
       number: 3,
-      url: techIcon,
+      url: garantiaIcon,
     },
   ];
   return (
@@ -37,7 +36,7 @@ const Switcher = ({ setSelectedTab, selected }) => {
             onKeyDown={() => onClickTab(item.number)}
           >
             <img
-              className={selected !== item.number && grayIcon}
+              className={tab_img}
               src={item.url}
               alt={item.name}
             />

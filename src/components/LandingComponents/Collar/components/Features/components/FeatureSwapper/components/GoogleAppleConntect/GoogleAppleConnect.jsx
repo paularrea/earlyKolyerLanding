@@ -5,11 +5,16 @@ import AppleImg from "./AppleImg";
 
 const GoogleAppleConnect = () => {
   return (
-    <div className={container}>
+    <div
+      data-sal="fade"
+      data-sal-delay="100"
+      data-sal-duration="1000"
+      className={container}
+    >
       <p>Conecta el collar a nuestra app.</p>
       <div className={flex_container}>
-      <div className={img}>
-          <AppleImg/>
+        <div className={img}>
+          <AppleImg />
         </div>
         <div className={img}>
           <GooglePlayImg />

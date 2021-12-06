@@ -5,7 +5,7 @@ const EarlyImgDesk = () => {
   return (
     <StaticImage
       placeholder="blurred"
-      src="../../../../../../images/pre-sell-desktop.png"
+      src="../../../../../../images/pre-sell-desktop.svg"
       alt="barra de fases de preventa"
     />
   );

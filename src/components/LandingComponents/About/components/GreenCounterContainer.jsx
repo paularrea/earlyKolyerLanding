@@ -3,7 +3,7 @@ import {
   green_container,
   flex_container,
   flex_div,
-  desktop_container
+  desktop_container,
 } from "../about.module.scss";
 import { fb_insta_icons } from "../../../../images/icons/fb_insta_icons.png";
 import AnimatedCounter from "./AnimatedCounter";
@@ -17,8 +17,15 @@ const GreenCounterContainer = () => {
           <div className={green_container}>
             <div className={desktop_container}>
               {" "}
-              <h2>Comunidad</h2>
-              <div className={flex_container}>
+              <h2 data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+                Comunidad
+              </h2>
+              <div
+                data-sal="fade"
+                data-sal-delay="100"
+                data-sal-duration="1000"
+                className={flex_container}
+              >
                 <div style={{ borderRight: "2px solid whitesmoke" }}>
                   <h3>
                     +

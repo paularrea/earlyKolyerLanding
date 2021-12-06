@@ -13,19 +13,21 @@ const Compra = () => {
     <>
       <TopBanner />
       <div className={container}>
-        <h2>Dale más vida</h2>
-        <p>
+        <h2 data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+          Dale más vida
+        </h2>
+        <p data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
           Esta promoción es exclusiva para los primeros clientes{" "}
           <b>(Early kolyers)</b> del collar kolyy.
         </p>
         <IntroCard />
-        <EarlyKolyyerBanner />
+        <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000">
+          <EarlyKolyyerBanner />
+        </div>
+
         <Cards />
         <List />
-        <CustomCollar
-          selected={selected}
-          setSelected={setSelected}
-        />
+        <CustomCollar selected={selected} setSelected={setSelected} />
       </div>
     </>
   );

@@ -48,15 +48,15 @@ const Cards = () => {
   ];
   return (
     <div className={cards_container}>
-      <h2>Packs Early kolyer</h2>
-      <p>
+      <h2 data-sal="fade" data-sal-delay="100" data-sal-duration="1000">Packs Early kolyer</h2>
+      <p data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
         Sé el primero en disfrutar de la tecnología kolyy con un descuento de
         hasta el 35%.
       </p>
       <div className={flex}>
         {cardsCollection.map((card) => {
           return (
-            <div key={card.index} className={card_container}>
+            <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" key={card.index} className={card_container}>
               <div className={img}>{card.img}</div>
               <div>
                 <div className={green_price}>

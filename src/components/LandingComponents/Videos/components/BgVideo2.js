@@ -6,7 +6,7 @@ const BgVideo2 = (props) => {
   const data = useStaticQuery(
     graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "bg_video_2.png" }) {
+        placeholderImage: file(relativePath: { eq: "bg_video_2.jpg" }) {
           childImageSharp {
             fluid(maxWidth: 1360, quality: 90, webpQuality: 90) {
               ...GatsbyImageSharpFluid

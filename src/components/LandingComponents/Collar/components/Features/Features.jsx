@@ -10,17 +10,22 @@ const Features = () => {
   return (
     <>
       <div className={container}>
-        <h2>Dale más vida</h2>
-        <p>
+        <h2 data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000">
+          Dale más vida
+        </h2>
+        <p data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000">
           Un collar diseñado para satisfacer a los amantes de los perros en el
           crecimiento, seguimiento y el desarrollo de su vida.
         </p>
-        <ArrowsImg />
+        <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000">
+          <ArrowsImg />
+        </div>
       </div>
-     <Sponsors/>
+        <Sponsors />
+
       <BgImgFeatures />
       <FeatureSwapper />
-      <ScrollFeatures/>
+      <ScrollFeatures />
     </>
   );
 };

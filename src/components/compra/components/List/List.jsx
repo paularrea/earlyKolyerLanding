@@ -24,7 +24,7 @@ const List = () => {
     <div className={list_container}>
       {lista.map((item) => {
         return (
-          <div key={item.index}>
+          <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" key={item.index}>
             <h2>{item.title}</h2>
             <p>{item.text}</p>
           </div>

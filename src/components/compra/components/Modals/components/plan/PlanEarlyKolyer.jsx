@@ -3,7 +3,9 @@ import { container, flex_container, list } from "./plan.module.scss";
 
 const PlanEarlyKolyer = () => {
   return (
-    <div className={container}>
+    <div
+      className={container}
+    >
       <section>
         <h4>PLAN EARLY KOLYER*</h4>
         <div className={flex_container}>

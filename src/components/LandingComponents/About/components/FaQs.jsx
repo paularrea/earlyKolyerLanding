@@ -99,8 +99,10 @@ const FaQs = () => {
 
   return (
     <div className={faqs_container}>
-      <h2>FAQs</h2>
-      <div>
+      <h2 data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000">
+        FAQs
+      </h2>
+      <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
         {faqsCollection.map((faq) => {
           return (
             <div

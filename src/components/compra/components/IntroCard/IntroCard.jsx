@@ -10,7 +10,7 @@ import {
   text,
   abs,
   btn_container,
-  only_kolyer_btn
+  only_kolyer_btn,
 } from "./introCard.module.scss";
 import { Link } from "react-scroll";
 import SubscriptionModal from "./components/SubscriptionModal";
@@ -26,16 +26,23 @@ const IntroCard = () => {
   return (
     <div className={container}>
       {openSubscription && (
-        <SubscriptionPlan openModal={openSubscriptionModal} />
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+          <SubscriptionPlan openModal={openSubscriptionModal} />
+        </div>
       )}
-      <div className={img}>
+      <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000" className={img}>
         <ImgIntroCard />
       </div>
       <div className={abs}>
-        <button className={only_kolyer_btn} onClick={openSubscriptionModal}>
-        <b>Sólo Early kolyers</b>
+        <button data-sal="fade" data-sal-delay="100" data-sal-duration="1000" className={only_kolyer_btn} onClick={openSubscriptionModal}>
+          <b>Sólo Early kolyers</b>
         </button>
-        <div className={info_container}>
+        <div
+          data-sal="slide-up"
+          data-sal-delay="100"
+          data-sal-duration="1000"
+          className={info_container}
+        >
           <h4>Collar kolyy + plan de suscripción</h4>
           <SubscriptionModal />
           <section className={flex}>
@@ -60,7 +67,10 @@ const IntroCard = () => {
             </p>
           </div>
         </div>
-        <IntroInfo />
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+          <IntroInfo />
+        </div>
+
         <div className={btn_container}>
           <MediaQuery maxWidth={870}>
             <Link

@@ -33,21 +33,21 @@
             text-align: left;
             width: 100px;
             position: absolute;
-            top: 2rem;
-            left: 20%;
+            top: 2.5rem;
+            left: 15%;
         } 
         .abs2{
             text-align: right;
             width: 100px;
             position: absolute;
-            top: 22%;
-            right: 3%;
+            top: 20%;
+            right: 0;
         } 
         .abs3{
             text-align: left;
             width: 100px;
             position: absolute;
-            bottom: 30%;
+            bottom: 13%;
             left: 18%;
         } 
         .abs4{
@@ -55,7 +55,7 @@
             width: 100px;
             position: absolute;
             bottom: 5%;
-            right: 24%;
+            right: 20%;
         } 
     }
 }
@@ -68,23 +68,23 @@
         .img_container{
             .abs1{
                 width: auto;
-                top: 4%;
-                left: 26%;
+                top: 8%;
+                left: 20%;
             } 
             .abs2{
                 width: auto;
-                top: 26%;
-                right: 5%;
+                top: 22%;
+                right: 0;
             } 
             .abs3{
                 width: auto;
-                bottom: 35%;
-                left: 18%;
+                bottom: 12%;
+                left: 15%;
             } 
             .abs4{
                 width: auto;
                 bottom: 5%;
-                right: 24%;
+                right: 20%;
             }
         }
     }

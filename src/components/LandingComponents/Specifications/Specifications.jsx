@@ -18,7 +18,7 @@ const Specifications = () => {
   return (
     <div id="especificaciones">
       <div className={container} style={{ backgroundColor: bgColor }}>
-        <section>
+        <section data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
           <h4>Elige el tuyo</h4>
           <p>3 colores y 4 tamaños para elegir.</p>
           <MediaQuery maxWidth={900}>
@@ -31,7 +31,12 @@ const Specifications = () => {
             </div>
           </MediaQuery>
         </section>
-        <section className={container_section}>
+        <section
+          data-sal="fade"
+          data-sal-delay="100"
+          data-sal-duration="1000"
+          className={container_section}
+        >
           <h2>kolyy tech</h2>
           <div className={flex_container}>
             <div className={img_container}>

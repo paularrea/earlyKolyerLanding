@@ -7,6 +7,7 @@ import {
   hide,
   tabInfo,
   flex_container,
+  img,
 } from "./swapper.module.scss";
 import MockupActivity from "./components/img/MockupActivity";
 import MockupHealth from "./components/img/MockupHealth";
@@ -61,28 +62,36 @@ const FeatureSwapper = () => {
   return (
     <div className={container}>
       <GoogleAppleConnect />
-      <h2>Todos los detalles en tu mano</h2>
-      <Switcher selected={selected} setSelectedTab={setSelectedTab} />
-      <MediaQuery minWidth={900}>
-        <div className={flex_container}>
-          {selectedTab.map((item) => {
-            return (
-              <div className={tabInfo}>
-                {item.text}
-                <div>{item.img}</div>
-              </div>
-            );
-          })}
-        </div>
-      </MediaQuery>
-      <MediaQuery maxWidth={899}>
-        {selectedTab.map((item) => (
-          <div className={selected === item.index ? tabInfo : hide}>
-            {item.text}
-            <div>{item.img}</div>
+      <h2 data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000">
+        Todos los detalles en tu mano
+      </h2>
+      <section
+        data-sal="fade"
+        data-sal-delay="100"
+        data-sal-duration="1000"
+      >
+        <Switcher selected={selected} setSelectedTab={setSelectedTab} />
+        <MediaQuery minWidth={900}>
+          <div className={flex_container}>
+            {selectedTab.map((item) => {
+              return (
+                <div className={tabInfo}>
+                  {item.text}
+                  <div className={img}>{item.img}</div>
+                </div>
+              );
+            })}
           </div>
-        ))}
-      </MediaQuery>
+        </MediaQuery>
+        <MediaQuery maxWidth={899}>
+          {selectedTab.map((item) => (
+            <div className={selected === item.index ? tabInfo : hide}>
+              {item.text}
+              <div className={img}>{item.img}</div>
+            </div>
+          ))}
+        </MediaQuery>
+      </section>
     </div>
   );
 };

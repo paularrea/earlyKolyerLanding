@@ -9,8 +9,8 @@
         text-align: center;
         h4{
             font-weight: 300;
-            font-size: 22px;
-            line-height: 27px;
+            font-size: 18px !important;
+            line-height: 20px;
             padding: 1rem 0;
         }
         .flex_container{
@@ -26,6 +26,7 @@
                     line-height: 19px;
                 }
                 h5{
+                    padding: 0;
                     font-weight: 600;
                     font-size: 22px;
                     line-height: 27px;
@@ -39,6 +40,20 @@
             font-size: 14px;
             line-height: 19px;
             font-weight: 300;
+        }
+    }
+}
+
+
+@media (min-width: 870px) {
+    .container{
+        section{
+            h4{
+                font-weight: 300;
+                font-size: 22px;
+                line-height: 27px;
+                padding: 1rem 0;
+            }
         }
     }
 }

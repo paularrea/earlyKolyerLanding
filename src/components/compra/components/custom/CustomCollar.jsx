@@ -52,12 +52,12 @@ const CustomCollar = ({ setSelected, selected }) => {
         }}
       >
         {displayProducts.length !== 0 ? (
-          <p>Personaliza otro collar</p>
+          <p data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000">Personaliza otro collar</p>
         ) : (
-          <p>Personaliza tu Kolyy</p>
+          <p data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000">Personaliza tu Kolyy</p>
         )}
       </h3>
-      <div id="buy-collar">
+      <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000" id="buy-collar">
         <CollarOptions
           selected={selected}
           openModal={openSizeModal}
@@ -77,7 +77,7 @@ const CustomCollar = ({ setSelected, selected }) => {
           />
         ))}
       </div>
-      <div className={selected_options_container}>
+      <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" className={selected_options_container}>
         <SelectedOptions
           stripeUrl={stripeUrl}
           pushCollarToArray={pushCollarToArray}

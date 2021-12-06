@@ -5,7 +5,7 @@ const EarlyImg = () => {
   return (
     <StaticImage
       placeholder="blurred"
-      src="../../../../../../images/pre-sell-phases.png"
+      src="../../../../../../images/pre-sell-phases.svg"
       alt="barra de fases de preventa"
     />
   );
