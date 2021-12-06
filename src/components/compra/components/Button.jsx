@@ -1,10 +1,13 @@
-import React from 'react'
-import {button} from '../compra.module.scss'
+import { Link } from "gatsby";
+import React from "react";
+import { button } from "../compra.module.scss";
 
-const Button = () => {
-    return (
-   <button className={button}>COMPRAR</button>
-    )
-}
+const Button = ({ children, to }) => {
+  return (
+    <Link to={to}>
+      <button className={button}>{children}</button>
+    </Link>
+  );
+};
 
-export default Button
+export default Button;

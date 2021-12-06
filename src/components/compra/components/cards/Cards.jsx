@@ -36,15 +36,6 @@ const Cards = () => {
       decimal: ",40",
       before: "€420",
     },
-    // {
-    //   index: 3,
-    //   img: <ThreeCollar />,
-    //   deal: "-35%",
-    //   ahorro: "Ahorras 252€",
-    //   text: "Tres collares inteligentes a un precio único.",
-    //   price: "€409",
-    //   before: "€630",
-    // },
   ];
   return (
     <div className={cards_container}>

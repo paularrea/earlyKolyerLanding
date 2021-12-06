@@ -14,14 +14,15 @@ const Features = () => {
           Dale más vida
         </h2>
         <p data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000">
-          Un collar diseñado para satisfacer a los amantes de los perros en el
-          crecimiento, seguimiento y el desarrollo de su vida.
+          Un collar diseñado para satisfacer a aquellos amantes de los perros
+          que saben de la importancia que tiene mantener a su perro sano y
+          activo.
         </p>
         <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000">
           <ArrowsImg />
         </div>
       </div>
-        <Sponsors />
+      <Sponsors />
 
       <BgImgFeatures />
       <FeatureSwapper />

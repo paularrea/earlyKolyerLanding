@@ -26,15 +26,21 @@ const IntroCard = () => {
   return (
     <div className={container}>
       {openSubscription && (
-        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+        <div>
           <SubscriptionPlan openModal={openSubscriptionModal} />
         </div>
       )}
-      <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000" className={img}>
+      <div className={img}>
         <ImgIntroCard />
       </div>
       <div className={abs}>
-        <button data-sal="fade" data-sal-delay="100" data-sal-duration="1000" className={only_kolyer_btn} onClick={openSubscriptionModal}>
+        <button
+          data-sal="fade"
+          data-sal-delay="100"
+          data-sal-duration="1000"
+          className={only_kolyer_btn}
+          onClick={openSubscriptionModal}
+        >
           <b>Sólo Early kolyers</b>
         </button>
         <div
@@ -78,9 +84,10 @@ const IntroCard = () => {
               to="buy-collar"
               spy={true}
               smooth={true}
+              offset={-100}
               duration={1000}
             >
-              <Button />
+              <Button>Comprar</Button>
             </Link>
           </MediaQuery>
           <MediaQuery minWidth={870}>
@@ -89,10 +96,10 @@ const IntroCard = () => {
               to="buy-collar"
               spy={true}
               smooth={true}
-              offset={-200}
+              offset={0}
               duration={1000}
             >
-              <Button />
+              <Button>Comprar</Button>
             </Link>
           </MediaQuery>
         </div>

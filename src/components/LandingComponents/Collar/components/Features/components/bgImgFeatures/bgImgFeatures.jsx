@@ -21,17 +21,16 @@ const BgImgFeatures = () => {
         <OnePhoneMockup />
       </div>
       <p data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" className={abs_1}>
-        <b>Registra su actividad</b> para mantener a tu perro en buena forma.
+        <b>Registra la actividad.</b><br />La mejor manera de tener a tu perro en forma.
       </p>
       <p data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" className={abs_2}>
-        Conviértete en su entrenador personal y{" "}
-        <b>disfruta mientras él cumple sus objetivos.</b>
+      Conviértete en un experto y <b>disfruta junto a él</b> mientras conseguís los objetivos.
       </p>
       <div className={abs_img_2}>
         <MultiplePhoneMockup />
       </div>
       <p data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000" className={abs_3}>
-        <b>Un paseo con juego</b> es mucho más divertido.
+        <b>Un paseo con juegos</b> es mucho más divertido.
       </p>
       <div className={abs_img_3}>
         <GreenComponent />

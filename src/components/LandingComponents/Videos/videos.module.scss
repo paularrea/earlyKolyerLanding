@@ -1,7 +1,52 @@
+// .container{
+//     position: relative;
+//     overflow: hidden;
+//     width: 100%;
+//     padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+//     .video_container{
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         bottom: 0;
+//         right: 0;
+//         width: 100%;
+//         height: 100%;
+//       }
+// }
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .container iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+  }
+  
+  @media (min-aspect-ratio: 16/9) {
+    .container iframe {
+      /* height = 100 * (9 / 16) = 56.25 */
+      height: 56.25vw;
+    }
+  }
+  @media (max-aspect-ratio: 16/9) {
+    .container iframe {
+      /* width = 100 / (9 / 16) = 177.777777 */
+      width: 177.78vh;
+    }
+  }
+
 .video_container{
     position: relative;
     width: 100%;
-    height: 95vh;
+    height: 100vh;
     background-color: transparent;
     color: white;
     display: flex;

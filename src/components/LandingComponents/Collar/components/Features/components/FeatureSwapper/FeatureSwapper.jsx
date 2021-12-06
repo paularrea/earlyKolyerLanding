@@ -24,7 +24,7 @@ const FeatureSwapper = () => {
           <br />
           Reportes{" "}
           <b>
-            diarios, semanales y menusales. <br /> Objetivos personalizables.
+            diarios, semanales y menusales. <br /> Objetivos personalizables
           </b>{" "}
           a tu perro.
         </p>
@@ -35,7 +35,7 @@ const FeatureSwapper = () => {
     {
       text: (
         <p>
-          <b>Seguimiento y sugerencias de </b>profesionales veterinarios.
+          Seguimiento y sugerencias de <b>profesionales veterinarios.</b>
           <br />
           <b>Informes periódicos</b> de recomendaciones.
           <br />

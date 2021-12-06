@@ -12,6 +12,7 @@
     .flex_scroll{
         display: flex;
         overflow-x: scroll;
+        overflow-y: hidden;
         width: auto;
         .img{
             padding: 1rem;

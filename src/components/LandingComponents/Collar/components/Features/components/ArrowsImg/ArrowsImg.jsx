@@ -1,16 +1,18 @@
 import React from "react";
 import { container, img_container, abs1, abs2, abs3, abs4 } from "./arrowsImg.module.scss";
 import { StaticImage } from "gatsby-plugin-image";
+import Button from "../../../../../../compra/components/Button"
 
 const ArrowsImg = () => {
   return (
     <div className={container}>
+        <Button to='/comprar-collar-kolyy'>Comprar ya</Button>
       <div className={img_container}>
         <div className={abs1}>
-          <p>Monitorización de la actividad</p>
+          <p>Tracking actividad</p>
         </div>
         <div className={abs2}>
-          <p>Seguimiento de la salud</p>
+          <p>Seguimiento salud</p>
         </div>
         <StaticImage
           placeholder="blurred"
@@ -21,7 +23,7 @@ const ArrowsImg = () => {
           <p>Localizador GPS</p>
         </div>
         <div className={abs4}>
-          <p>Formación personalizada</p>
+          <p>Contenido personalizado</p>
         </div>
       </div>
     </div>

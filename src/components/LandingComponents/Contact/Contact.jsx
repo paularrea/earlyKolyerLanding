@@ -9,12 +9,7 @@ const Contact = () => {
       <h2 data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000">
         Contacta
       </h2>
-      <div
-        data-sal="fade"
-        data-sal-delay="100"
-        data-sal-duration="1000"
-        className={flex_container}
-      >
+      <div className={flex_container}>
         <div>
           <ContactForm />
         </div>

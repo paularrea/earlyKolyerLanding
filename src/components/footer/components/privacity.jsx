@@ -12,7 +12,8 @@ const Privacity = () => {
           <div className={privacity_container}>
             <Link to="/politica-de-privacidad">Política de privacidad</Link> |
             <Link to="/política-cookies">Política de cookies</Link> |
-            <Link to="/aviso-legal">Aviso legal</Link>
+            <Link to="/aviso-legal">Aviso legal</Link> |
+            <Link to="/terminos-y-condiciones">Términos y condiciones</Link> 
           </div>
         </section>
       </MediaQuery>
@@ -23,6 +24,7 @@ const Privacity = () => {
             <Link to="/politica-de-privacidad">Política de privacidad</Link>
             <Link to="/política-cookies">Política de cookies</Link>
             <Link to="/aviso-legal">Aviso legal</Link>
+            <Link to="/terminos-y-condiciones">Términos y condiciones</Link>
           </div>
         </section>
       </MediaQuery>

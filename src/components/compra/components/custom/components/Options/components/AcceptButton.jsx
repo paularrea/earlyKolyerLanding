@@ -10,7 +10,7 @@ const AcceptButton = ({ finishAndPay, selected }) => {
         to="go_to_checkout"
         spy={true}
         smooth={true}
-        offset={-300}
+        offset={-400}
         duration={1000}
       >
         <button

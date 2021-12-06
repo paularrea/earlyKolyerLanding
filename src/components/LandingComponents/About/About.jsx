@@ -70,19 +70,19 @@ const About = () => {
               </p>
             </MediaQuery>
             <p data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
-              Sky nos dejó por un cáncer intestinal con solo 7 años.
+              Sky nos dejó por un cáncer intestinal con tan solo 7 años.
               Aparentemente sano, un día dejó de comer y ya no pudimos hacer
-              nada para salvarlo.{" "}
+              nada para salvarle.
             </p>
             <h3 data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
               Los perros esconden su dolor hasta que ya es demasiado tarde.
             </h3>
             <p data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
-              Entendimos que los perros por su condición suelen esconder el
+              Entendimos que los perros por su condición, suelen esconder el
               dolor hasta que ya es demasiado tarde. Somos sus héroes, sus
               padres, su familia y nuestra compañía es su mayor felicidad. No
-              los veremos tristes hasta que el sufrimiento sea difícil de
-              soportar.
+              les veremos tristes hasta que el sufrimiento y el dolor sea
+              difícil de soportar.
             </p>
           </div>
           <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
