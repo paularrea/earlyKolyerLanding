@@ -143,6 +143,9 @@
     }
     .answer{
         padding-top: .5rem;
+        color: gray;
+        font-size: 14px;
+        line-height: 17px;
     }
 }
 
@@ -206,6 +209,13 @@
         }
     }
     }
+    }
+    .faqs_container{
+        .answer{
+            margin: 1rem;
+            font-size: 18px;
+            line-height: 22px;
+        }
     }
 }
 

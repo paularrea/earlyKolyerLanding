@@ -116,13 +116,11 @@ const FaQs = () => {
                 <p className={see_more}>+</p>
               </div>
               <p
+
                 className={answer}
                 style={{
                   display:
                     answerNumber === faq.index && open ? "block" : "none",
-                  color: "gray",
-                  fontSize: "14px",
-                  lineHeight: "17px",
                 }}
               >
                 {faq.answer}
