@@ -3,12 +3,15 @@
 .container{
     position: relative;
     width: 100vw;
-    height: 70vh;
-    max-height: 600px;
+    padding: 6rem 0 0 0;
+    height: 100%;
+    max-height: auto;
     background-color: #1D1D21;
-    padding: 16vh 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     h1{
-        position: absolute;
         left: 0;
         right: 0;
         z-index: 9999;
@@ -21,20 +24,12 @@
         text-align: center;
     }
     .abs_img{
-        position: absolute;
-        margin: auto;
-        right: 0;
-        left: 0;
-        bottom: 0rem;
+        margin: 1.5rem auto;
         width: 90%;
-        bottom: 3rem;
         z-index: 1;
     }
     .abs_info{
         z-index: 2;
-        position: absolute;
-        bottom: .5rem;
-        right: 0;
         margin: auto;
     }
 }
@@ -42,8 +37,8 @@
 
 @media (min-width: 870px) {
 .container{
-    height: 80vh;
-    max-height: 80vh;
+    height: 100%;
+    padding: 10rem 0 0 0;
     h1{
         top: 250px;
         left: 0;
@@ -55,7 +50,7 @@
         font-weight: 800;
     }
     .abs_img{
-        bottom: -1rem;
+        bottom: 0rem;
         width: 60%;
     }
 }

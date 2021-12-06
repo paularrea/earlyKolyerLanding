@@ -10,10 +10,13 @@ const Intro = () => {
   return (
     <div id="el-collar">
       <div className={container}>
-        <h1 data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
-          El primer smartwatch para perros <br />
-        <Button to="/comprar-collar-kolyy">Comprar ya</Button>
-        </h1>
+        <div>
+          <h1 data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+            El primer smartwatch para perros <br />
+            <Button to="/comprar-collar-kolyy">Comprar ya</Button>
+          </h1>
+        </div>
+
         <div
           data-sal="fade"
           data-sal-delay="100"
