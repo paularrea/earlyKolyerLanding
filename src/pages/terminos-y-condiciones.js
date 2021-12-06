@@ -11,7 +11,18 @@ const Terms = () => {
       <div className={container}>
         <h2>Términos y condiciones</h2>
         <p>
-          descarga el pdf de términos y condiciones <a href="">aquí</a>
+          Descarga el pdf de términos y condiciones{" "}
+          <b>
+            <a
+              style={{ color: "#30AAAA" }}
+              rel="noreferrer"
+              target="_blank"
+              href="/src/terms/condiciones_de_venta_kolyy_2021.pdf"
+              download
+            >
+              aquí
+            </a>
+          </b>
         </p>
       </div>
     </Layout>

@@ -18,7 +18,7 @@ const Features = () => {
           que saben de la importancia que tiene mantener a su perro sano y
           activo.
         </p>
-        <div data-sal="slide-up" data-sal-delay="100" data-sal-duration="1000">
+        <div data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
           <ArrowsImg />
         </div>
       </div>

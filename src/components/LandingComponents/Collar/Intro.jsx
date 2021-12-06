@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../compra/components/Button";
 import EarlyKolyyerBanner from "./components/EarlyKolyyer/EarlyKolyyerBanner";
 import Features from "./components/Features/Features";
 import IntroImg from "./components/introInfo/IntroImg";
@@ -10,7 +11,8 @@ const Intro = () => {
     <div id="el-collar">
       <div className={container}>
         <h1 data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
-          El primer smartwatch para perros
+          El primer smartwatch para perros <br />
+        <Button to="/comprar-collar-kolyy">Comprar ya</Button>
         </h1>
         <div
           data-sal="fade"
