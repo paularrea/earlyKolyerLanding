@@ -9,6 +9,11 @@
     z-index: 9999;
     height: 180px;
 }
+h3{
+    font-size: 20px !important;
+    font-weight: 800 !important;
+    line-height: 22.1px !important;  
+}
 .container{
     position: absolute;
     background: linear-gradient(0deg, #1F1F1F, #1F1F1F);
@@ -88,6 +93,11 @@
 }
 
 @media (min-width: 870px) {
+    h3{
+        font-size: 24px !important;
+        font-weight: 800 !important;
+        line-height: 26.53px !important;  
+    }
     .bg_container{
         height: 150px;
         .container{

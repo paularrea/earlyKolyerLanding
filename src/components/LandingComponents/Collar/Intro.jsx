@@ -9,17 +9,35 @@ const Intro = () => {
   return (
     <div id="el-collar">
       <div className={container}>
-        <h1>El primer smartwatch para perros</h1>
-        <div className={abs_img}>
+        <h1 data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
+          El primer smartwatch para perros
+        </h1>
+        <div
+          data-sal="fade"
+          data-sal-delay="100"
+          data-sal-duration="1000"
+          className={abs_img}
+        >
           <IntroImg />
         </div>
-        <div className={abs_info}>
+        <div
+          data-sal="fade"
+          data-sal-delay="100"
+          data-sal-duration="1000"
+          className={abs_info}
+        >
           <IntroInfo />
         </div>
       </div>
       <div style={{ zIndex: 9999999 }}>
         <div style={{ backgroundColor: "#1D1D21" }}>
-          <EarlyKolyyerBanner />
+          <div
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-duration="1000"
+          >
+            <EarlyKolyyerBanner />
+          </div>
         </div>
       </div>
       <Features />
