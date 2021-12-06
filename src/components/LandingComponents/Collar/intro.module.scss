@@ -26,7 +26,8 @@
         right: 0;
         left: 0;
         bottom: 0rem;
-        width: 100%;
+        width: 90%;
+        bottom: -1rem;
         z-index: 1;
     }
     .abs_info{
@@ -40,7 +41,6 @@
 
 
 @media (min-width: 870px) {
-
 .container{
     height: 80vh;
     max-height: 80vh;
@@ -55,7 +55,8 @@
         font-weight: 800;
     }
     .abs_img{
-        bottom: -6rem;
+        bottom: -1rem;
+        width: 60%;
     }
 }
 }
