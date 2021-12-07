@@ -16,11 +16,13 @@
         color: white;
         justify-content: center;
         align-items: center;
+        text-align: left;
         b{
             font-weight: 500;
         }
         img{
             padding-right: .5rem;
+            max-width: 40px;
         }
         p,b{
             line-height: 14.52px;

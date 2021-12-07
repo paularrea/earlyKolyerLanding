@@ -1,6 +1,6 @@
 import React from "react";
 import { flex_container } from "./introInfo.module.scss";
-import tick_icon from "../../../../../images/icons/tick_icon.png";
+import tick_icon from "../../../../../images/icons/garantia_icon.png";
 import collar_icon from "../../../../../images/icons/collar_icon.png";
 import delivery_icon from "../../../../../images/icons/delivery_icon.png";
 
