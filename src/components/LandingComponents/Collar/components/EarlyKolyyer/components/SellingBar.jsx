@@ -1,5 +1,10 @@
 import React from "react";
-import { selling_bar_container, total_bar, completed, bar_info } from "../earlyKolyyerBanner.module.scss";
+import {
+  selling_bar_container,
+  total_bar,
+  completed,
+  bar_info,
+} from "../earlyKolyyerBanner.module.scss";
 
 const ProgressiveBar = () => {
   return (
@@ -8,7 +13,10 @@ const ProgressiveBar = () => {
         <div className={completed}></div>
       </div>
       <div className={bar_info}>
-        <p>Collares pre-vendidos: 40%</p>
+        <p>
+          Collares vendidos: 18% <br />
+          Unidades limitadas
+        </p>
         <p>Faltan 32 días</p>
       </div>
     </section>

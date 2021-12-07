@@ -11,6 +11,7 @@ const CollarOptions = ({
   setSelected,
   displayProducts,
   openModal,
+  disabledButton,
   finishAndPay,
 }) => {
   const [chooseSize, setChooseSize] = useState("");
@@ -48,7 +49,11 @@ const CollarOptions = ({
               selected={selected}
               addSizeToSelected={addSizeToSelected}
             />
-            <AcceptButton selected={selected} finishAndPay={finishAndPay} />
+            <AcceptButton
+              disabledButton={disabledButton}
+              selected={selected}
+              finishAndPay={finishAndPay}
+            />
           </div>
         </div>
       )}

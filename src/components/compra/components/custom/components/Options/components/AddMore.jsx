@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-scroll";
 import { add_button } from "../../custom.module.scss";
 
-const AddMore = ({ pushCollarToArray, selected, displayProducts }) => {
+const AddMore = ({ pushCollarToArray, displayProducts }) => {
   return (
     <div>
       <Link
@@ -18,8 +18,8 @@ const AddMore = ({ pushCollarToArray, selected, displayProducts }) => {
             color: displayProducts.length >= 2 && "gray",
             border: displayProducts.length >= 2 && "1px solid gray",
           }}
-          className={add_button}
           disabled={displayProducts.length >= 2}
+          className={add_button}
           onClick={pushCollarToArray}
         >
           + añadir otro collar

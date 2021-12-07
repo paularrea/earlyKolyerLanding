@@ -9,6 +9,7 @@ import GuiaTallas from "../Modals/GuiaTallas";
 import { stripeProducts } from "../../../../Stripe/products";
 
 const CustomCollar = ({ setSelected, selected }) => {
+  const [disabledButton, setDisabledButton] = useState(false)
   const [
     displayCustomCollarSelection,
     setDisplayCustomCollarSelection,
@@ -36,11 +37,18 @@ const CustomCollar = ({ setSelected, selected }) => {
     setStripeUrl(stripeProducts(displayProducts));
   }, [displayProducts]);
 
+  useEffect(() => {
+    displayProducts && displayProducts.length >= 2 ? setDisabledButton(true) : setDisabledButton(false);
+  }, [displayProducts]);
+
+console.log(disabledButton, 'in custom')
+
   return (
     <div
       className={flex_custom_container}
       style={{ background: selected.bgColor }}
     >
+      
       {openSize && <GuiaTallas openModal={openSizeModal} />}
       <h3
         style={{
@@ -64,6 +72,7 @@ const CustomCollar = ({ setSelected, selected }) => {
           setSelected={setSelected}
           pushCollarToArray={pushCollarToArray}
           finishAndPay={finishAndPay}
+          disabledButton={disabledButton}
         />
         {[...Array(displayCustomCollarSelection)].map((_, i) => (
           <CollarOptions
@@ -74,6 +83,7 @@ const CustomCollar = ({ setSelected, selected }) => {
             setSelected={setSelected}
             pushCollarToArray={pushCollarToArray}
             finishAndPay={finishAndPay}
+            disabledButton={disabledButton}
           />
         ))}
       </div>

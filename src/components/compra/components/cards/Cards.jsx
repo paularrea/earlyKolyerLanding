@@ -30,7 +30,7 @@ const Cards = () => {
       index: 2,
       img: <TwoCollar />,
       deal: "-33%",
-      ahorro: "Ahorras 147€",
+      ahorro: "Ahorras 138€",
       text: "Dos collares inteligentes para tus perros.",
       price: "€281",
       decimal: ",40",

@@ -36,6 +36,6 @@ export const collectionOfSizes = [
     subTitle: "Perros maxi",
     text:
       "Mastín Español, Gran Danés, San Bernardo, Mastiff, Terranova, Rottweiler...",
-    size: "43 x 58 cm",
+    size: "58 x 86 cm",
   },
 ];

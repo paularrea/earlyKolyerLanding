@@ -19,8 +19,8 @@ const Specifications = () => {
     <div id="especificaciones">
       <div className={container} style={{ backgroundColor: bgColor }}>
         <section data-sal="fade" data-sal-delay="100" data-sal-duration="1000">
-          <h4>Elige el tuyo</h4>
-          <p>3 colores y 4 tamaños para elegir.</p>
+          <h4>En 3 colores y 4 tallas</h4>
+          <p>Elige el tuyo</p>
           <MediaQuery maxWidth={900}>
             <ColorSwapper setBgColor={setBgColor} bgColor={bgColor} />
           </MediaQuery>

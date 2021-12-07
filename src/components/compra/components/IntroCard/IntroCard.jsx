@@ -10,6 +10,7 @@ import {
   text,
   abs,
   btn_container,
+  interrogant,
   only_kolyer_btn,
 } from "./introCard.module.scss";
 import { Link } from "react-scroll";
@@ -49,7 +50,11 @@ const IntroCard = () => {
           data-sal-duration="1000"
           className={info_container}
         >
-          <h4>Collar kolyy + plan de suscripción</h4>
+          <div style={{cursor:'pointer'}} onClick={openSubscriptionModal}>
+            <h4>
+              Collar kolyy + plan de suscripción <span className={interrogant}>?</span>
+            </h4>
+          </div>
           <SubscriptionModal />
           <section className={flex}>
             <div>

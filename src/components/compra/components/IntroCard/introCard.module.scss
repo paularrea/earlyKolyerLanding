@@ -12,6 +12,17 @@
         color: white;
     }
 }
+.interrogant{
+    border-radius: 100px;
+    background-color: white;
+    color: black;
+    padding: .1rem .4rem;
+    min-width: 50px !important;
+    min-height: 50px !important;
+    width: 50px !important;
+    font-size: 14px;
+    height: 50px !important;
+}
 .container{
     margin: 2rem 0;
     background: transparent;
@@ -60,6 +71,7 @@
                 justify-content: space-between;
                 align-items: flex-start;
                 text-align: left;
+                padding-top: 1rem;
             }
         }
         .btn_container{
@@ -95,7 +107,7 @@
                 width: auto;
 
                 margin: 0;
-                padding: 2rem;
+                padding: 1rem;
             }
             .btn_container{
                 margin: 1rem auto;

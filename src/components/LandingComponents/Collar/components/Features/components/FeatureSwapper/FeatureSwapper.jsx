@@ -24,9 +24,9 @@ const FeatureSwapper = () => {
           <br />
           Reportes{" "}
           <b>
-            diarios, semanales y menusales. <br /> Objetivos personalizables
+            diarios, semanales y mensuales. <br /> Objetivos personalizables
           </b>{" "}
-          a tu perro.
+          para tu perro.
         </p>
       ),
       img: <MockupActivity />,

@@ -2,9 +2,10 @@ import React from "react";
 import { Link } from "react-scroll";
 import { add_button } from "../../custom.module.scss";
 
-const AcceptButton = ({ finishAndPay, selected }) => {
+const AcceptButton = ({ finishAndPay, disabledButton }) => {
+  console.log(disabledButton, 'button')
   return (
-    <div style={{padding:'0 5vw 2rem 5vw'}}>
+    <div style={{ padding: "0 5vw 2rem 5vw" }}>
       <Link
         activeClass="active"
         to="go_to_checkout"
@@ -14,15 +15,15 @@ const AcceptButton = ({ finishAndPay, selected }) => {
         duration={1000}
       >
         <button
-          className={add_button}
           style={{
-            color: !selected.size && "gray",
-            border: !selected.size && "1px solid gray",
+            color: disabledButton && "gray",
+            border: disabledButton && "1px solid gray",
           }}
-          disabled={!selected.size}
+          disabled={disabledButton}
+          className={add_button}
           onClick={finishAndPay}
         >
-          añadir al carrito
+          añadir collar
         </button>
       </Link>
     </div>

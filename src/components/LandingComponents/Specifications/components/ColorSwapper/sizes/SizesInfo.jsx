@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import MediaQuery from "react-responsive";
+import Button from "../../../../../compra/components/Button";
 import Switcher from "./components/Switcher";
 import {
   container,
@@ -32,8 +33,8 @@ const TechSwapper = () => {
     },
     {
       size1: <b>Perros extra grandes:</b>,
-      size2: "Boxer, Doberman, German Shepherd, Golden Retriever, Pit Bull...",
-      size3: "43 x 58 cm",
+      size2: "Mastín Español, Gran Danés, San Bernardo, Mastiff, Terranova, Rottweiler...",
+      size3: "58 x 86 cm",
       index: 4,
     },
   ];
@@ -49,6 +50,11 @@ const TechSwapper = () => {
             <p>{item.size3}</p>
           </div>
         ))}
+
+<br />
+<br />
+<Button to='/comprar-collar-kolyy'>Elegir mi collar</Button>
+
     </div>
   );
 };
