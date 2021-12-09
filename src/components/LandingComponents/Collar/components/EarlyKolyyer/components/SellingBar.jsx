@@ -14,10 +14,10 @@ const ProgressiveBar = () => {
       </div>
       <div className={bar_info}>
         <p>
-          Collares vendidos: 18% <br />
+          Collares vendidos: 24% <br />
           Unidades limitadas
         </p>
-        <p>Faltan 32 días</p>
+        <p>Faltan 22 días</p>
       </div>
     </section>
   );
